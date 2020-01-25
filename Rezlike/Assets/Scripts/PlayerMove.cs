@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-
     public float PlayerSpeed = 0.1f; // Speed the player can move in the bounds of the offset
     public float MaxOffset = 5f;
 
+    // Made public for testing
     public Vector3 CurrentOffset = new Vector3(0f, 0f, 0f);
 
     public Transform RailsToFollow;

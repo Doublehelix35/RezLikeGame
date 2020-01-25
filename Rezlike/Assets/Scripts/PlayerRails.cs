@@ -8,12 +8,8 @@ public class PlayerRails : MonoBehaviour
     public float Radius = 5f; // Distance from center
     public float AxisSpeed = 0.5f; // Speed that axis changes    
 
-    
     Vector3 Center = new Vector3(0f, 0f, 0f); // Center to rotate around
     float CurrentRotation = 0f;
-
-    Vector3 AxisToRotateAround = Vector3.up;
-   
 
 
     void Start()
@@ -27,10 +23,7 @@ public class PlayerRails : MonoBehaviour
         // Update current rotation
         CurrentRotation = RotateSpeed * Time.deltaTime;
 
-        // Slowly move axis
-        
-        
         // Rotate around center based on axis
-        transform.RotateAround(Center, AxisToRotateAround, CurrentRotation);
+        transform.RotateAround(Center, Vector3.up, CurrentRotation);
     }
 }

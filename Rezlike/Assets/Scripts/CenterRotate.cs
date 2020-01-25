@@ -4,32 +4,24 @@ using UnityEngine;
 
 public class CenterRotate : MonoBehaviour
 {
-
     public float RotateSpeed = 1f; // Speed that the center rotates
     public float MaxRotation = 45f; // Max rotation in degrees
+    float SpeedOffsetZ = 1.25f; // Make the z axis move faster
+    float NegativeRotationOffset = 0.75f; // How negative the rotation should go
+
+    float RotationOffset; // Offset angle
+    float RotationOffsetModifier = 0.8f; // Percentage to use of max rotation
+
+    void Start()
+    {
+        // Calc rotation offset
+        RotationOffset = MaxRotation * RotationOffsetModifier;
+    }
 
     void FixedUpdate()
     {
-        // Set random rotation percentage
-        float randX = Random.Range(0f, 1f);
-        float randZ = Random.Range(0f, 1f);
-
-        // Ping pong between -1f and 1f
-        float pingX = Mathf.PingPong(Time.time, 2f) - 1f;
-        float pingZ = Mathf.PingPong(Time.time, 2f) - 1f;
-
-        // Combine rand and ping
-        randX *= pingX;
-        randZ *= pingZ;
-
-        // Rotate center
-        transform.Rotate(randX * RotateSpeed, 0f, randZ * RotateSpeed);
-
-        // Clamp rotation
-        Vector3 clampRotation = transform.localEulerAngles;
-        clampRotation.x = Mathf.Clamp(clampRotation.x, -MaxRotation, MaxRotation);
-        clampRotation.y = 0f;
-        clampRotation.z = Mathf.Clamp(clampRotation.z, -MaxRotation, MaxRotation);
-        transform.rotation = Quaternion.Euler(clampRotation);
+        // Rotate x and z
+        transform.localEulerAngles = new Vector3(RotationOffset + Mathf.PingPong(Time.time * RotateSpeed, MaxRotation) - (MaxRotation * NegativeRotationOffset), 
+                                             0f, RotationOffset + Mathf.PingPong(Time.time * RotateSpeed * SpeedOffsetZ, MaxRotation) - (MaxRotation * NegativeRotationOffset));
     }
 }
