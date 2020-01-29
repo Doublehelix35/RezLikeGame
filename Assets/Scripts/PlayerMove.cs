@@ -6,7 +6,8 @@ public class PlayerMove : MonoBehaviour
 {
     public float PlayerSpeed = 0.1f; // Speed the player can move in the bounds of the offset
     public float MaxOffset = 5f;
-    
+    public Transform CenterRef;
+
     Vector3 CurrentOffset = new Vector3(0f, 0f, 0f);
 
     public Transform RailsToFollow;
@@ -43,5 +44,8 @@ public class PlayerMove : MonoBehaviour
 
         // Set position = rails position + offset
         transform.position = new Vector3(RailsToFollow.position.x + CurrentOffset.x, RailsToFollow.position.y + CurrentOffset.y, RailsToFollow.position.z);
+
+        // Face the center
+        transform.LookAt(CenterRef);
     }
 }
