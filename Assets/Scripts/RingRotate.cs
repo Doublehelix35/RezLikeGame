@@ -23,5 +23,8 @@ public class RingRotate : MonoBehaviour
 
         // Rotate around center based on forward axis
         transform.RotateAround(CenterRef.position, transform.forward, CurrentRotation);
+
+        // Rotate around center based on up axis
+        transform.RotateAround(CenterRef.position, transform.up, CurrentRotation);
     }
 }
