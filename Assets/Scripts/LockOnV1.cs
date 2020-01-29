@@ -11,29 +11,31 @@ public class LockOnV1 : MonoBehaviour
     bool locked;
     Image mytarget;
 
+    LockOnV2 mainscript;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        mainscript = Camera.main.gameObject.GetComponent<LockOnV2>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (locked)
+        /*if (locked)
         {
             Vector3 mypos = Camera.main.WorldToScreenPoint(gameObject.transform.position);
             mypos = new Vector3(mypos.x, mypos.y, 0);
 
-            mytarget.transform.position = mypos;
+            //mytarget.transform.position = mypos;
 
             if (Input.GetButtonDown("Fire1"))
             {
                 GameObject.Destroy(mytarget);
                 GameObject.Destroy(gameObject);
             }
-        }
+        }*/
     }
 
     private void OnMouseEnter()
@@ -42,12 +44,14 @@ public class LockOnV1 : MonoBehaviour
         {
             Debug.Log("Moused");
 
-            Vector3 mypos = Camera.main.WorldToScreenPoint(gameObject.transform.position);
+            /*Vector3 mypos = Camera.main.WorldToScreenPoint(gameObject.transform.position);
             mypos = new Vector3(mypos.x, mypos.y, 0);
 
             //mytarget.transform.position = mypos;
             mytarget = Instantiate(target, mypos, Quaternion.Euler(0, 0, 0));
-            mytarget.transform.SetParent(GameObject.Find("Canvas").transform);
+            mytarget.transform.SetParent(GameObject.Find("Canvas").transform);*/
+
+            mainscript.addlock(gameObject);
 
             locked = true;
         }
