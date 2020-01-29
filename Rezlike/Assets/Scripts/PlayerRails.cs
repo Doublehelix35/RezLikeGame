@@ -6,7 +6,6 @@ public class PlayerRails : MonoBehaviour
 {
     public float RotateSpeed = 10f; // Speed the player rotates around center of sphere
     public float Radius = 5f; // Distance from center
-    public float AxisSpeed = 0.5f; // Speed that axis changes    
     public Transform CenterRef;
 
     float CurrentRotation = 0f;
