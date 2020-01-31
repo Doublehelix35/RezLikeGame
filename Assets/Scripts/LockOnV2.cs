@@ -12,12 +12,14 @@ public class LockOnV2 : MonoBehaviour
     public int maxlock;
     //List<GameObject> enemies = new List<GameObject>();
     GameObject[] enemies;
+    public int currentlocknum;
 
     // Start is called before the first frame update
     void Start()
     {
         enemies = new GameObject[maxlock];
         alltargets = new Image[maxlock];
+        currentlocknum = 0;
     }
 
     // Update is called once per frame
@@ -35,6 +37,8 @@ public class LockOnV2 : MonoBehaviour
 
                     enemies[i] = null;
                     alltargets[i] = null;
+
+                    currentlocknum = 0;
 
                     //Debug.Log("Succ");
                 }
@@ -74,6 +78,8 @@ public class LockOnV2 : MonoBehaviour
                 //alltargets[i].name = "Target " + i;
 
                 //Debug.Log(enemies[i].name);
+
+                currentlocknum += 1;
 
                 break;
 

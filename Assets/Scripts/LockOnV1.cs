@@ -40,7 +40,7 @@ public class LockOnV1 : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if (locked == false)
+        if (locked == false && mainscript.currentlocknum != mainscript.maxlock)
         {
             Debug.Log("Moused");
 
