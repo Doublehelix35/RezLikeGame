@@ -31,13 +31,27 @@ public class LockOnV2 : MonoBehaviour
                 {
 
                     Destroy(enemies[i]);
-                    Destroy(alltargets[i]);
+                    Destroy(alltargets[i].gameObject);
 
                     enemies[i] = null;
                     alltargets[i] = null;
 
                     //Debug.Log("Succ");
                 }
+            }
+        }
+
+        for (int i = 0; i < maxlock; i++)
+        {
+            if (enemies[i] != null)
+            {
+
+                Vector3 mypos = Camera.main.WorldToScreenPoint(enemies[i].transform.position);
+                mypos = new Vector3(mypos.x, mypos.y, 0);
+
+                alltargets[i].transform.position = mypos;
+
+                //Debug.Log("Succ");
             }
         }
 
@@ -57,9 +71,13 @@ public class LockOnV2 : MonoBehaviour
                 alltargets[i] = Instantiate(targeticon, mypos, Quaternion.Euler(0, 0, 0));
                 alltargets[i].transform.SetParent(GameObject.Find("Canvas").transform);
 
+                //alltargets[i].name = "Target " + i;
+
+                //Debug.Log(enemies[i].name);
+
                 break;
 
-                //Debug.Log("Succ");
+                
             }
         }
 
