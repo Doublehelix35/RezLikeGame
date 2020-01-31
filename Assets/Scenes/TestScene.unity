@@ -1369,6 +1369,7 @@ MonoBehaviour:
   targeticon: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5,
     type: 3}
   maxlock: 6
+  currentlocknum: 0
 --- !u!1001 &1006321347
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1776,7 +1777,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 054d131b0b4586d40826ead311653842, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
