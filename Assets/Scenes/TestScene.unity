@@ -2345,11 +2345,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8820113262589298307, guid: a12bc1f3c358d954db0607e29e7952b4,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 6270012993925992650, guid: a12bc1f3c358d954db0607e29e7952b4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2415,31 +2410,6 @@ PrefabInstance:
       propertyPath: RailsToFollow
       value: 
       objectReference: {fileID: 2110288647}
-    - target: {fileID: 6193335628005424211, guid: a12bc1f3c358d954db0607e29e7952b4,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6193335628005424211, guid: a12bc1f3c358d954db0607e29e7952b4,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6193335628005424211, guid: a12bc1f3c358d954db0607e29e7952b4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6193335628005424211, guid: a12bc1f3c358d954db0607e29e7952b4,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 6193335628005424211, guid: a12bc1f3c358d954db0607e29e7952b4,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a12bc1f3c358d954db0607e29e7952b4, type: 3}
 --- !u!1 &2110288645
