@@ -54,6 +54,8 @@ public class LockOnV1 : MonoBehaviour
             mainscript.addlock(gameObject);
 
             locked = true;
+
+            Debug.Log(GetComponent<BoxCollider>().center);
         }
     }
 }

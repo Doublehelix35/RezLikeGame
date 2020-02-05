@@ -50,7 +50,8 @@ public class LockOnV2 : MonoBehaviour
             if (enemies[i] != null)
             {
 
-                Vector3 mypos = Camera.main.WorldToScreenPoint(enemies[i].transform.position);
+                Vector3 mypos = enemies[i].transform.TransformPoint(enemies[i].GetComponent<BoxCollider>().center);
+                mypos = Camera.main.WorldToScreenPoint(mypos);
                 mypos = new Vector3(mypos.x, mypos.y, 0);
 
                 alltargets[i].transform.position = mypos;
@@ -69,7 +70,9 @@ public class LockOnV2 : MonoBehaviour
             {
                 enemies[i] = enemy;
 
-                Vector3 mypos = Camera.main.WorldToScreenPoint(enemy.transform.position);
+                Vector3 mypos = enemy.transform.TransformPoint(enemy.GetComponent<BoxCollider>().center);
+                mypos = Camera.main.WorldToScreenPoint(mypos);
+                
                 mypos = new Vector3(mypos.x, mypos.y, 0);
 
                 alltargets[i] = Instantiate(targeticon, mypos, Quaternion.Euler(0, 0, 0));
