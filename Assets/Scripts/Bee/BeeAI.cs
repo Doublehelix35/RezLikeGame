@@ -25,6 +25,9 @@ public class BeeAI : MonoBehaviour
             Vector3 dir = PlayerRef.transform.position - transform.position;
 
             Rigid.AddForce(dir * Speed, ForceMode.Force);
+
+            // Face the player
+            transform.LookAt(PlayerRef.transform);
         }
     }
         

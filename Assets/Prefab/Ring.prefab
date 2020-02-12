@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 389490321582890702}
   - component: {fileID: 8271552064369905116}
   - component: {fileID: 5299529734673632578}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface3
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,10 +118,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &377054891472546080
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,9 +136,9 @@ GameObject:
   - component: {fileID: 8287699792482318257}
   - component: {fileID: 7602027996083036399}
   - component: {fileID: 8943721289949599336}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube4
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -240,10 +240,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &1101434896420937162
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,9 +258,9 @@ GameObject:
   - component: {fileID: 2194898556913014260}
   - component: {fileID: 7661196679250757357}
   - component: {fileID: 1316757517318504744}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface6
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -362,10 +362,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &1170934417006746986
 GameObject:
   m_ObjectHideFlags: 0
@@ -380,9 +380,9 @@ GameObject:
   - component: {fileID: 7451551570266841184}
   - component: {fileID: 6954298352831806606}
   - component: {fileID: 7962700896783857884}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface5
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -484,10 +484,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &1581918161298569068
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,9 +502,9 @@ GameObject:
   - component: {fileID: 4036433297500787668}
   - component: {fileID: 4228390121957390254}
   - component: {fileID: 3880328775545687162}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface2
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -606,10 +606,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &2278700073449416360
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,9 +624,9 @@ GameObject:
   - component: {fileID: 8333002007505628122}
   - component: {fileID: 4048610956158253138}
   - component: {fileID: 1057133009629520527}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube9
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -728,10 +728,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &2598204654647630282
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,9 +746,9 @@ GameObject:
   - component: {fileID: 122713451676211501}
   - component: {fileID: 1605324106171742973}
   - component: {fileID: 8254733660568193545}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface1
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -850,10 +850,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &2763411169677176845
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,9 +868,9 @@ GameObject:
   - component: {fileID: 4060782733229095899}
   - component: {fileID: 321455086363638549}
   - component: {fileID: 4778134709499669930}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube8
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -972,10 +972,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &3502632104070279566
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,9 +990,9 @@ GameObject:
   - component: {fileID: 6633450551512813143}
   - component: {fileID: 3389273950025108301}
   - component: {fileID: 3564322892338291527}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface8
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1094,10 +1094,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &3717021084803553029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,9 +1112,9 @@ GameObject:
   - component: {fileID: 8127496391830280696}
   - component: {fileID: 100094088510534213}
   - component: {fileID: 6164889447463522570}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface7
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1216,10 +1216,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &5259992083440432045
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,9 +1234,9 @@ GameObject:
   - component: {fileID: 3865560131093513561}
   - component: {fileID: 882134593180036655}
   - component: {fileID: 1649482494755486253}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube5
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1338,10 +1338,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &5518380034559903977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,9 +1356,9 @@ GameObject:
   - component: {fileID: 7681184174729329595}
   - component: {fileID: 2434565763665421369}
   - component: {fileID: 1842762012551271005}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube2
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1460,10 +1460,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &5711607071300391433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,9 +1478,9 @@ GameObject:
   - component: {fileID: 7210945971621788657}
   - component: {fileID: 6370663492217851013}
   - component: {fileID: 638601949668665202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube7
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1582,10 +1582,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &6805183247614196681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,9 +1600,9 @@ GameObject:
   - component: {fileID: 7152802060477746426}
   - component: {fileID: 6663627421124739865}
   - component: {fileID: 2875458615219563189}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: polySurface4
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1704,10 +1704,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &7042523172729333117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,9 +1722,9 @@ GameObject:
   - component: {fileID: 1705326318303792717}
   - component: {fileID: 7430517221502121262}
   - component: {fileID: 4033234692098312893}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube11
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1826,10 +1826,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &8276436902324101825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,9 +1844,9 @@ GameObject:
   - component: {fileID: 741942857098106591}
   - component: {fileID: 710758943218125682}
   - component: {fileID: 9000611059435022833}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: pCube6
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1948,10 +1948,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab6bafdf4aba8e45bd5f5be2ce9387d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BeePrefab: {fileID: 7074174343077652537, guid: 427709b96d899f7468b1127714817952,
+  BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  PlayerRef: {fileID: 0}
   MaxBeesToSpawn: 2
+  MinBeesToSpawn: 0
 --- !u!1 &9105683143388852887
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,9 +1961,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5190041554632474756}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ring
-  m_TagString: Untagged
+  m_TagString: Ring
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

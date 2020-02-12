@@ -7,7 +7,7 @@ public class BeeSpawner : MonoBehaviour
     public GameObject BeePrefab;
 
     public int MaxBeesToSpawn = 2; // Maxium bees
-    int MinBeesToSpawn = 1;
+    public int MinBeesToSpawn = 0;
 
 
     bool isQuitting = false;
