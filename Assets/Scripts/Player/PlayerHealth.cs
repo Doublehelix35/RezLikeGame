@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public Slider SliderRef;
+
     public int MaxHealth = 5;
     int CurHealth;
 
@@ -12,7 +15,13 @@ public class PlayerHealth : MonoBehaviour
 
     void Start()
     {
+        // Init health and UI
         CurHealth = MaxHealth;
+
+        SliderRef.minValue = 0f;
+        SliderRef.maxValue = MaxHealth;
+        SliderRef.value = MaxHealth;
+
     }
 
     void Update()
@@ -41,5 +50,8 @@ public class PlayerHealth : MonoBehaviour
     {
         // Add value to change by to current health
         CurHealth += valueToChangeBy;
+
+        // Update UI
+        SliderRef.value = CurHealth;
     }
 }
