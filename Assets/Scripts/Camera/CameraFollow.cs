@@ -10,7 +10,7 @@ public class CameraFollow : MonoBehaviour
     public float OffsetMagnitude = 1f; // How far behind the rails should it be
 
 
-    // Start is called before the first frame update
+
     void Start()
     {        
         // Radius = distance between rails and center + radius offset
@@ -21,7 +21,6 @@ public class CameraFollow : MonoBehaviour
         transform.position = new Vector3(CenterRef.position.x + radius, CenterRef.position.y, CenterRef.position.z);
     }
 
-    // Update is called once per frame
     void Update()
     {
         // Get behind rails

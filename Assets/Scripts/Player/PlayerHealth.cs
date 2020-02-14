@@ -24,11 +24,6 @@ public class PlayerHealth : MonoBehaviour
 
     }
 
-    void Update()
-    {
-        
-    }
-
     void OnCollisionEnter(Collision col)
     {
         if(col.gameObject.tag == "Bee")
