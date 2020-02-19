@@ -9,6 +9,8 @@ public class Spawner : MonoBehaviour
     public float SpawnRadius = 1f;
 
     public float SpawnFrequency = 1f; // In seconds
+    public const float SpawnFrequencyMaxRandom = 0.5f;
+    float SpawnFrequencyRandom = 0f;
 
     IEnumerator coroutine;
 
@@ -24,7 +26,7 @@ public class Spawner : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(SpawnFrequency);
+            yield return new WaitForSeconds(SpawnFrequency + SpawnFrequencyRandom);
 
             float randX = Random.Range(-SpawnRadius, SpawnRadius);
             float randY = Random.Range(-SpawnRadius, SpawnRadius);
@@ -32,7 +34,10 @@ public class Spawner : MonoBehaviour
 
             // Spawn prefab
             Vector3 pos = new Vector3(transform.position.x + randX, transform.position.y + randY, transform.position.z + randZ);
-            Instantiate(PrefabToSpawn, pos, Quaternion.identity);
+            Instantiate(PrefabToSpawn, pos, transform.rotation);
+
+            // Change spawn frequency random
+            SpawnFrequencyRandom = Random.Range(-SpawnFrequencyMaxRandom, SpawnFrequencyMaxRandom);
         }        
     }
 }
