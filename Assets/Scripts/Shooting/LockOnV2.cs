@@ -14,12 +14,17 @@ public class LockOnV2 : MonoBehaviour
     GameObject[] enemies;
     public int currentlocknum;
 
+    public GameObject cursorreplacement;
+
     // Start is called before the first frame update
     void Start()
     {
         enemies = new GameObject[maxlock];
         alltargets = new Image[maxlock];
         currentlocknum = 0;
+
+        Cursor.visible = false;
+
     }
 
     // Update is called once per frame
@@ -59,6 +64,10 @@ public class LockOnV2 : MonoBehaviour
                 //Debug.Log("Succ");
             }
         }
+
+        //cursorreplacement.transform.position = Camera.main.WorldToScreenPoint(Input.mousePosition);
+        //cursorreplacement.transform.position = (new Vector3(cursorreplacement.transform.position.x, cursorreplacement.transform.position.y, 0));
+        cursorreplacement.transform.position = (new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
 
     }
 
