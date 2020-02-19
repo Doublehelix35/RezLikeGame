@@ -12,6 +12,9 @@ public class Spawner : MonoBehaviour
     public const float SpawnFrequencyMaxRandom = 0.5f;
     float SpawnFrequencyRandom = 0f;
 
+    [Range(0, 1)]
+    public float SpawnChance;
+
     IEnumerator coroutine;
 
 
@@ -28,16 +31,22 @@ public class Spawner : MonoBehaviour
         {
             yield return new WaitForSeconds(SpawnFrequency + SpawnFrequencyRandom);
 
-            float randX = Random.Range(-SpawnRadius, SpawnRadius);
-            float randY = Random.Range(-SpawnRadius, SpawnRadius);
-            float randZ = Random.Range(-SpawnRadius, SpawnRadius);
+            float randChance = Random.Range(0f, 1f);
 
-            // Spawn prefab
-            Vector3 pos = new Vector3(transform.position.x + randX, transform.position.y + randY, transform.position.z + randZ);
-            Instantiate(PrefabToSpawn, pos, transform.rotation);
+            // Random chance to spawn bee
+            if(randChance <= SpawnChance)
+            {
+                float randX = Random.Range(-SpawnRadius, SpawnRadius);
+                float randY = Random.Range(-SpawnRadius, SpawnRadius);
+                float randZ = Random.Range(-SpawnRadius, SpawnRadius);
 
-            // Change spawn frequency random
-            SpawnFrequencyRandom = Random.Range(-SpawnFrequencyMaxRandom, SpawnFrequencyMaxRandom);
+                // Spawn prefab
+                Vector3 pos = new Vector3(transform.position.x + randX, transform.position.y + randY, transform.position.z + randZ);
+                Instantiate(PrefabToSpawn, pos, transform.rotation);
+
+                // Change spawn frequency random
+                SpawnFrequencyRandom = Random.Range(-SpawnFrequencyMaxRandom, SpawnFrequencyMaxRandom);
+            }            
         }        
     }
 }
