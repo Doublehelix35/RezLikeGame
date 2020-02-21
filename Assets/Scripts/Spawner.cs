@@ -17,6 +17,10 @@ public class Spawner : MonoBehaviour
 
     IEnumerator coroutine;
 
+    public bool RandomXSpawn = true;
+    public bool RandomYSpawn = true;
+    public bool RandomZSpawn = true;
+
 
     void Start()
     {
@@ -36,9 +40,13 @@ public class Spawner : MonoBehaviour
             // Random chance to spawn bee
             if(randChance <= SpawnChance)
             {
-                float randX = Random.Range(-SpawnRadius, SpawnRadius);
-                float randY = Random.Range(-SpawnRadius, SpawnRadius);
-                float randZ = Random.Range(-SpawnRadius, SpawnRadius);
+                float randX = 0f;
+                float randY = 0f;
+                float randZ = 0f;
+
+                if (RandomXSpawn) { randX = Random.Range(-SpawnRadius, SpawnRadius); }
+                if (RandomYSpawn) { randY = Random.Range(-SpawnRadius, SpawnRadius); }
+                if (RandomZSpawn) { randZ = Random.Range(-SpawnRadius, SpawnRadius); }
 
                 // Spawn prefab
                 Vector3 pos = new Vector3(transform.position.x + randX, transform.position.y + randY, transform.position.z + randZ);
