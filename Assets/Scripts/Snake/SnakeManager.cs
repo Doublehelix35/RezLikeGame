@@ -23,6 +23,7 @@ public class SnakeManager : MonoBehaviour
         if (Health <= 0)
         {
             // Snake dead
+            DestroyPiece(gameObject);
         }
         else if(Health < (SnakePieces.Length - 1 * HealthPerPiece))
         {
@@ -56,5 +57,6 @@ public class SnakeManager : MonoBehaviour
         // Spawn particle effects
 
         // Destroy piece
+        Destroy(pieceToDestroy);
     }
 }

@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 8543519910369837058}
   - component: {fileID: 8543519910369837070}
   - component: {fileID: 8543519910369837059}
+  - component: {fileID: 4480510113943673383}
   m_Layer: 0
   m_Name: SnakePiece
-  m_TagString: Untagged
+  m_TagString: Snake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +91,7 @@ BoxCollider:
   m_GameObject: {fileID: 8543519910369837061}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -120,7 +121,7 @@ SpringJoint:
   m_ConnectedBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0.5, z: 1.4629998}
+  m_ConnectedAnchor: {x: 0, y: 0.5, z: 1.5}
   serializedVersion: 2
   m_Spring: 50
   m_Damper: 0.2
@@ -150,3 +151,17 @@ MonoBehaviour:
   FollowSpeed: 30
   MinFollowDistance: 10
   StopFollowDistance: 0.1
+  OffsetMagnitudeMaxZ: 1.2
+--- !u!114 &4480510113943673383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8543519910369837061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a333c260806f2b346b53f27a1e0caf24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}

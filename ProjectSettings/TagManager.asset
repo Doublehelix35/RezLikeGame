@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Bee
   - Ring
+  - Snake
   layers:
   - Default
   - TransparentFX

@@ -13,11 +13,13 @@ GameObject:
   - component: {fileID: 7895710852284487836}
   - component: {fileID: 7895710852284487837}
   - component: {fileID: 7895710852284487833}
+  - component: {fileID: 7872279234099059316}
   - component: {fileID: 7895710852284487838}
   - component: {fileID: 7895710852284487832}
+  - component: {fileID: 119024400642981758}
   m_Layer: 0
   m_Name: SnakeHead
-  m_TagString: Untagged
+  m_TagString: Snake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +92,7 @@ BoxCollider:
   m_GameObject: {fileID: 7895710852284487839}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -110,6 +112,20 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7872279234099059316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7895710852284487839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e7b56a83ff8abe42bc9b97c157d6912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SnakePieces: []
+  HealthPerPiece: 3
 --- !u!114 &7895710852284487838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,9 +140,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsSnakeHead: 1
   ObjectToFollow: {fileID: 0}
-  FollowSpeed: 1.8
+  FollowSpeed: 10
   MinFollowDistance: 10
-  StopFollowDistance: 0.1
+  StopFollowDistance: 1
+  OffsetMagnitudeMaxZ: 2
 --- !u!145 &7895710852284487832
 SpringJoint:
   m_ObjectHideFlags: 0
@@ -137,7 +154,7 @@ SpringJoint:
   m_ConnectedBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0.5, z: 1.6600001}
+  m_ConnectedAnchor: {x: 0, y: 0.5, z: 1.6599998}
   serializedVersion: 2
   m_Spring: 50
   m_Damper: 0.2
@@ -150,3 +167,16 @@ SpringJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &119024400642981758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7895710852284487839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a333c260806f2b346b53f27a1e0caf24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}

@@ -1171,6 +1171,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SnakePiece (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8543519910369837061, guid: a8eafb2871c982243bdb242d7cfea360,
+        type: 3}
+      propertyPath: m_TagString
+      value: Snake
+      objectReference: {fileID: 0}
     - target: {fileID: 8543519910369837060, guid: a8eafb2871c982243bdb242d7cfea360,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1226,6 +1231,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8543519910369837057, guid: a8eafb2871c982243bdb242d7cfea360,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8543519910369837070, guid: a8eafb2871c982243bdb242d7cfea360,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -1260,6 +1270,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SnakePiece (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8543519910369837061, guid: a8eafb2871c982243bdb242d7cfea360,
+        type: 3}
+      propertyPath: m_TagString
+      value: Snake
       objectReference: {fileID: 0}
     - target: {fileID: 8543519910369837060, guid: a8eafb2871c982243bdb242d7cfea360,
         type: 3}
@@ -1316,6 +1331,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8543519910369837057, guid: a8eafb2871c982243bdb242d7cfea360,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8543519910369837070, guid: a8eafb2871c982243bdb242d7cfea360,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -1329,7 +1349,7 @@ PrefabInstance:
     - target: {fileID: 8543519910369837070, guid: a8eafb2871c982243bdb242d7cfea360,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 1.52
+      value: 1.5199995
       objectReference: {fileID: 0}
     - target: {fileID: 8543519910369837070, guid: a8eafb2871c982243bdb242d7cfea360,
         type: 3}
@@ -1832,36 +1852,6 @@ PrefabInstance:
       propertyPath: ObjectToFollow
       value: 
       objectReference: {fileID: 2023275265}
-    - target: {fileID: 7895710852284487838, guid: db36ace2234e4b743bfa4e794500843c,
-        type: 3}
-      propertyPath: IsSnakeHead
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7895710852284487838, guid: db36ace2234e4b743bfa4e794500843c,
-        type: 3}
-      propertyPath: FollowSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7895710852284487838, guid: db36ace2234e4b743bfa4e794500843c,
-        type: 3}
-      propertyPath: StopFollowDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7895710852284487838, guid: db36ace2234e4b743bfa4e794500843c,
-        type: 3}
-      propertyPath: MinFollowDistance
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7895710852284487838, guid: db36ace2234e4b743bfa4e794500843c,
-        type: 3}
-      propertyPath: OffsetMagnitudeMaxZ
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7895710852284487838, guid: db36ace2234e4b743bfa4e794500843c,
-        type: 3}
-      propertyPath: OffsetMagnitudeMaxY
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7895710852284487832, guid: db36ace2234e4b743bfa4e794500843c,
         type: 3}
       propertyPath: m_ConnectedBody
@@ -2010,20 +2000,10 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 305878059}
-    - target: {fileID: 8543519910369837070, guid: a8eafb2871c982243bdb242d7cfea360,
-        type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: 1.5
-      objectReference: {fileID: 0}
     - target: {fileID: 8543519910369837059, guid: a8eafb2871c982243bdb242d7cfea360,
         type: 3}
       propertyPath: ObjectToFollow
       value: 
       objectReference: {fileID: 590305037}
-    - target: {fileID: 8543519910369837059, guid: a8eafb2871c982243bdb242d7cfea360,
-        type: 3}
-      propertyPath: OffsetMagnitudeMaxZ
-      value: 1.2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8eafb2871c982243bdb242d7cfea360, type: 3}
