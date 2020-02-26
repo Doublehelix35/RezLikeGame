@@ -16,6 +16,8 @@ public class LockOnV2 : MonoBehaviour
 
     public GameObject cursorreplacement;
 
+    public GameObject laserprefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +26,6 @@ public class LockOnV2 : MonoBehaviour
         currentlocknum = 0;
 
         Cursor.visible = false;
-
     }
 
     // Update is called once per frame
@@ -36,6 +37,8 @@ public class LockOnV2 : MonoBehaviour
             {
                 if (enemies[i] != null)
                 {
+                    var laserspawn = Instantiate(laserprefab);
+                    laserspawn.GetComponent<LaserPositions>().enemy = enemies[i];
 
                     Destroy(enemies[i]);
                     Destroy(alltargets[i].gameObject);
