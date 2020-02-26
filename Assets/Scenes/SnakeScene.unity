@@ -558,6 +558,8 @@ MonoBehaviour:
   maxlock: 6
   currentlocknum: 0
   cursorreplacement: {fileID: 1409679245}
+  laserprefab: {fileID: 3809442928978866920, guid: 66d40c8bc9313a74db1d77f9c93050d3,
+    type: 3}
 --- !u!1 &1115851630
 GameObject:
   m_ObjectHideFlags: 0

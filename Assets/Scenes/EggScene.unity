@@ -1538,6 +1538,8 @@ MonoBehaviour:
   maxlock: 6
   currentlocknum: 0
   cursorreplacement: {fileID: 597071378}
+  laserprefab: {fileID: 3809442928978866920, guid: 66d40c8bc9313a74db1d77f9c93050d3,
+    type: 3}
 --- !u!1001 &1006321347
 PrefabInstance:
   m_ObjectHideFlags: 0
