@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &500452830502555799
 Transform:
   m_ObjectHideFlags: 0
@@ -45,9 +45,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  SpawnRadius: 5
-  SpawnFrequency: 2.1
-  SpawnChance: 0.5
+  SpawnRadius: 4
+  SpawnFrequency: 2
+  SpawnChance: 0.6
+  UseScaleModifier: 1
+  DefaultScale: {x: 1, y: 1, z: 1}
+  ScaleModifierMax: {x: 1.1, y: 1.1, z: 1.1}
   RandomXSpawn: 1
   RandomYSpawn: 1
   RandomZSpawn: 1
+  RandomXRotation: 0
+  RandomYRotation: 1
+  RandomZRotation: 0

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2337709283369623753
+--- !u!1 &6788420335662553069
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2337709283369623756}
-  - component: {fileID: 2337709283369623758}
+  - component: {fileID: 878428041461426797}
+  - component: {fileID: 4093671218664904579}
   m_Layer: 0
-  m_Name: RingSpawner
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &2337709283369623756
+  m_IsActive: 1
+--- !u!4 &878428041461426797
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2337709283369623753}
+  m_GameObject: {fileID: 6788420335662553069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 50}
+  m_LocalPosition: {x: 6.176026, y: 1.6970692, z: -9.283123}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2337709283369623758
+--- !u!114 &4093671218664904579
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2337709283369623753}
+  m_GameObject: {fileID: 6788420335662553069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a44441d2e217c874a82f1ae30e5310ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 87ce12b81c41977449fb262bb938c250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrefabToSpawn: {fileID: 5215708395347640305, guid: d5efd3bb7660080449f58b77ec3f8f39,
-    type: 3}
-  SpawnRadius: 0.5
-  SpawnFrequency: 2.5
-  SpawnChance: 1
-  RandomXSpawn: 1
-  RandomYSpawn: 0
-  RandomZSpawn: 1
-  RandomXRotation: 0
-  RandomYRotation: 1
-  RandomZRotation: 0
+  NextLevelName: 
+  UseTimer: 0
+  TimerDelay: 0

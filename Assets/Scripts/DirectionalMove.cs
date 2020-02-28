@@ -31,6 +31,6 @@ public class DirectionalMove : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        transform.Translate(Dir * Speed);
+        transform.Translate(Dir * Speed, Space.World);
     }
 }

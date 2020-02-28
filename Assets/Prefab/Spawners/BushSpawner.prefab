@@ -48,6 +48,12 @@ MonoBehaviour:
   SpawnRadius: 15
   SpawnFrequency: 0.5
   SpawnChance: 0.8
+  UseScaleModifier: 1
+  DefaultScale: {x: 1, y: 1, z: 1}
+  ScaleModifierMax: {x: 1.2, y: 1.2, z: 1.2}
   RandomXSpawn: 1
   RandomYSpawn: 0
   RandomZSpawn: 1
+  RandomXRotation: 0
+  RandomYRotation: 1
+  RandomZRotation: 0
