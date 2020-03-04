@@ -122,6 +122,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &377054891472546080
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,6 +245,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &1101434896420937162
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +368,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &1170934417006746986
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +491,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &1581918161298569068
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,6 +614,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &2278700073449416360
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,6 +737,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &2598204654647630282
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,6 +860,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &2763411169677176845
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,6 +983,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &3502632104070279566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1106,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &3717021084803553029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,6 +1229,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &5259992083440432045
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,6 +1352,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &5518380034559903977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,6 +1475,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &5711607071300391433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,6 +1598,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &6805183247614196681
 GameObject:
   m_ObjectHideFlags: 0
@@ -1708,6 +1721,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &7042523172729333117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,6 +1844,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &8276436902324101825
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,6 +1967,7 @@ MonoBehaviour:
     type: 3}
   MaxBeesToSpawn: 2
   MinBeesToSpawn: 0
+  CurrentSceneName: EggScene
 --- !u!1 &9105683143388852887
 GameObject:
   m_ObjectHideFlags: 0

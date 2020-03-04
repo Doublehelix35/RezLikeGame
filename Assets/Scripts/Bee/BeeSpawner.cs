@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BeeSpawner : MonoBehaviour
 {
@@ -12,14 +13,19 @@ public class BeeSpawner : MonoBehaviour
 
     bool isQuitting = false;
 
+    public string CurrentSceneName; // Start scene name
+
+
     private void OnApplicationQuit()
     {
         isQuitting = true;
     }
 
+
     private void OnDestroy()
     {
-        if (!isQuitting)
+        // Make sure game is quitting or changed scene
+        if (!isQuitting && CurrentSceneName == SceneManager.GetActiveScene().name)
         {
             if (BeePrefab != null)
             {
