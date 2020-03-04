@@ -58,4 +58,9 @@ public class LockOnV1 : MonoBehaviour
             Debug.Log(GetComponent<BoxCollider>().center);
         }
     }
+
+    private void OnDestroy()
+    {
+        mainscript.purge(gameObject);
+    }
 }

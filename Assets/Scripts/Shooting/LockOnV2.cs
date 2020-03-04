@@ -104,4 +104,26 @@ public class LockOnV2 : MonoBehaviour
 
         //Debug.Log(enemies.Length);
     }
+
+    public void purge(GameObject enemy)
+    {
+        for (int i = 0; i < maxlock; i++)
+        {
+            if (enemies[i] == enemy)
+            {
+                /*var laserspawn = Instantiate(laserprefab);
+                laserspawn.GetComponent<LaserPositions>().enemy = enemies[i];*/
+
+                Destroy(enemies[i]);
+                Destroy(alltargets[i].gameObject);
+
+                enemies[i] = null;
+                alltargets[i] = null;
+
+                currentlocknum = 0;
+
+                //Debug.Log("Succ");
+            }
+        }
+    }
 }
