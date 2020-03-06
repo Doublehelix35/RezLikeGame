@@ -43,6 +43,7 @@ public class LockOnV2 : MonoBehaviour
                     if (enemies[i].tag == "Snake")
                     {
                         GameObject.Find("SnakeHead").GetComponent<SnakeManager>().LoseHealth(1);
+                        enemies[i].GetComponent<LockOnV1>().locked = false;
                     }
                     else
                     {

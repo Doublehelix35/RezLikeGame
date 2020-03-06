@@ -8,7 +8,7 @@ public class LockOnV1 : MonoBehaviour
 
     public Image target;
 
-    bool locked;
+    public bool locked;
     Image mytarget;
 
     LockOnV2 mainscript;
