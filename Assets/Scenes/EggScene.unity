@@ -2330,7 +2330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targeticon: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5,
     type: 3}
-  maxlock: 6
+  maxlock: 3
   currentlocknum: 0
   cursorreplacement: {fileID: 597071378}
   laserprefab: {fileID: 3809442928978866920, guid: 66d40c8bc9313a74db1d77f9c93050d3,
