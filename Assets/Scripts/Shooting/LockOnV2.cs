@@ -40,7 +40,15 @@ public class LockOnV2 : MonoBehaviour
                     var laserspawn = Instantiate(laserprefab);
                     laserspawn.GetComponent<LaserPositions>().enemy = enemies[i];
 
-                    Destroy(enemies[i]);
+                    if (enemies[i].tag == "Snake")
+                    {
+                        GameObject.Find("SnakeHead").GetComponent<SnakeManager>().LoseHealth(1);
+                    }
+                    else
+                    {
+                        Destroy(enemies[i]);
+                    }
+
                     Destroy(alltargets[i].gameObject);
 
                     enemies[i] = null;
