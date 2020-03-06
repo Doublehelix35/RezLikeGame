@@ -22,6 +22,8 @@ public class SnakeManager : MonoBehaviour
 
         if (Health <= 0)
         {
+            Debug.Log("Snake Dead");
+
             // Snake dead
             DestroyPiece(gameObject);
         }
@@ -29,6 +31,8 @@ public class SnakeManager : MonoBehaviour
         {
             if(SnakePieces.Length == 2)
             {
+                Debug.Log("Snake 2 pieces left");
+
                 // Flash piece red
 
                 // Destroy last piece
@@ -36,10 +40,13 @@ public class SnakeManager : MonoBehaviour
             }
             else if(SnakePieces.Length == 1)
             {
+                Debug.Log("Snake 1 pieces left");
                 // Flash piece red
             }
             else
             {
+                Debug.Log("Snake lost a piece");
+
                 // Flash piece red
 
                 // Connect piece (spring) before to piece after
@@ -54,6 +61,8 @@ public class SnakeManager : MonoBehaviour
 
     void DestroyPiece(GameObject pieceToDestroy)
     {
+        Debug.Log("Destroy this piece: " + pieceToDestroy.name);
+
         // Spawn particle effects
 
         // Destroy piece

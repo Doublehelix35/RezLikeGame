@@ -15,8 +15,11 @@ public class SceneController : MonoBehaviour
     void Start()
     {
         // Start coroutine
-        coroutine = GoToNextLevel();
-        StartCoroutine(coroutine);
+        if (UseTimer)
+        {
+            coroutine = GoToNextLevel();
+            StartCoroutine(coroutine);
+        }        
     }
 
     IEnumerator GoToNextLevel()
