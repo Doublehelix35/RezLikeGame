@@ -45,6 +45,11 @@ public class LockOnV2 : MonoBehaviour
                         GameObject.Find("SnakeHead").GetComponent<SnakeManager>().LoseHealth(1);
                         enemies[i].GetComponent<LockOnV1>().locked = false;
                     }
+                    else if (enemies[i].tag == "Ring")
+                    {
+                        enemies[i].GetComponent<BeeSpawner>().OnBeeDestroy();
+                        Destroy(enemies[i]);
+                    }
                     else
                     {
                         Destroy(enemies[i]);
