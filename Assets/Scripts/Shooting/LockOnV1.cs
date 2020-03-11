@@ -21,7 +21,7 @@ public class LockOnV1 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         /*if (locked)
         {
@@ -35,8 +35,8 @@ public class LockOnV1 : MonoBehaviour
                 GameObject.Destroy(mytarget);
                 GameObject.Destroy(gameObject);
             }
-        }*/
-    }
+        }
+    }*/
 
     private void OnMouseEnter()
     {
