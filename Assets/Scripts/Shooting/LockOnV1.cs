@@ -42,7 +42,7 @@ public class LockOnV1 : MonoBehaviour
     {
         if (locked == false && mainscript.currentlocknum != mainscript.maxlock)
         {
-            Debug.Log("Moused");
+            //Debug.Log("Moused");
 
             /*Vector3 mypos = Camera.main.WorldToScreenPoint(gameObject.transform.position);
             mypos = new Vector3(mypos.x, mypos.y, 0);
@@ -55,7 +55,7 @@ public class LockOnV1 : MonoBehaviour
 
             locked = true;
 
-            Debug.Log(GetComponent<BoxCollider>().center);
+            //Debug.Log(GetComponent<BoxCollider>().center);
         }
     }
 

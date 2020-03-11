@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.39621288, g: 0.7252653, b: 0.6729914, a: 1}
+  m_IndirectSpecularColor: {r: 0.39621285, g: 0.72526544, b: 0.6729898, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -120,6 +120,85 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &6970674
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2114717269022693045, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_Name
+      value: RockSpawner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: SpawnRadius
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: SpawnFrequency
+      value: 0.3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3d7994ec5ebcd2741a4630e29c656e2d, type: 3}
 --- !u!1 &100221902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,6 +2438,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c34ba22d7162e84d909fd0993509523, type: 3}
+--- !u!1001 &5694563083227922447
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2114717269022693045, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_Name
+      value: RockSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: SpawnRadius
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: SpawnFrequency
+      value: 0.3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3d7994ec5ebcd2741a4630e29c656e2d, type: 3}
 --- !u!1 &8213788444225316408
 GameObject:
   m_ObjectHideFlags: 0

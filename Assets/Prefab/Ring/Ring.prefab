@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &8271552064369905116
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -120,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &377054891472546080
@@ -216,6 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &7602027996083036399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -243,7 +245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &1101434896420937162
@@ -339,6 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &7661196679250757357
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -366,7 +369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &1170934417006746986
@@ -462,6 +465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &6954298352831806606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -489,7 +493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &1581918161298569068
@@ -585,6 +589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &4228390121957390254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -612,7 +617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &2278700073449416360
@@ -708,6 +713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &4048610956158253138
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -735,7 +741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &2598204654647630282
@@ -831,6 +837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &1605324106171742973
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -858,7 +865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &2763411169677176845
@@ -954,6 +961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &321455086363638549
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -981,7 +989,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &3502632104070279566
@@ -1077,6 +1085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &3389273950025108301
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1104,7 +1113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &3717021084803553029
@@ -1200,6 +1209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &100094088510534213
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1227,7 +1237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &5259992083440432045
@@ -1323,6 +1333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &882134593180036655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1350,7 +1361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &5518380034559903977
@@ -1446,6 +1457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &2434565763665421369
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1473,7 +1485,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &5711607071300391433
@@ -1569,6 +1581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &6370663492217851013
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1596,7 +1609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &6805183247614196681
@@ -1692,6 +1705,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &6663627421124739865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1719,7 +1733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &7042523172729333117
@@ -1815,6 +1829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &7430517221502121262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1842,7 +1857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &8276436902324101825
@@ -1938,6 +1953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
+  locked: 0
 --- !u!65 &710758943218125682
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1965,7 +1981,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BeePrefab: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
-  MaxBeesToSpawn: 2
+  MaxBeesToSpawn: 1
   MinBeesToSpawn: 0
   CurrentSceneName: EggScene
 --- !u!1 &9105683143388852887
