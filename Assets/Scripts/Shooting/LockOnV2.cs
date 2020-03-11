@@ -48,6 +48,7 @@ public class LockOnV2 : MonoBehaviour
                     else if (enemies[i].tag == "Ring")
                     {
                         enemies[i].GetComponent<BeeSpawner>().OnBeeDestroy();
+                        Destroy(enemies[i]);
                     }
                     else
                     {
