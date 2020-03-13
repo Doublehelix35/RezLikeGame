@@ -22,15 +22,19 @@ public class SoundManager : MonoBehaviour
 
 
     public static SoundManager instance = null; //Allows other scripts to call functions from SoundManager
+    public GameObject Gameman;
+    public int Scenenum;
 
-    
 
     //music for scenes
     public AudioClip scene1Music; //BeeScene
     public AudioClip scene2Music; //EggScene
     public AudioClip scene3Music; //SnakeScene
     public AudioClip scene4Music; //WinScene
-    
+
+    bool scene2play = false;
+    bool scene3play = false;
+    bool scene4play = false;
 
 
     public float lowPitchRange = .95f; //Lowest pitch a sfx will be
@@ -131,9 +135,9 @@ public class SoundManager : MonoBehaviour
         efxSource.Play();
     }
 
-    void levelMusicPlay()
+    void levelMusicPlay() //Sort this out in game manager
     {
-        Scene CurrentScene = SceneManager.GetActiveScene(); // Gets the current Active Scene
+        Scene CurrentScene = SceneManager.GetActiveScene(); //Gets the current Active Scene
         Debug.Log(CurrentScene.name);
         if (CurrentScene.name == "BeeScene")
         {
@@ -200,14 +204,32 @@ public class SoundManager : MonoBehaviour
     {
         musicSource.Play();
 
+        Scenenum = Gameman.GetComponent<SceneController>().scenenumberino;
+
         levelMusicPlay();
     }
 
     // Update is called once per frame
     void Update()
     {
-       
 
+        if (Scenenum == 2 && scene2play == false)
+        {
+            levelMusicPlay();
+            scene2play = true;
+        }
+
+        if (Scenenum == 3 && scene3play == false)
+        {
+            levelMusicPlay();
+            scene3play = true;
+        }
+
+        if (Scenenum == 4 && scene4play == false)
+        {
+            levelMusicPlay();
+            scene4play = true;
+        }
 
 
     }

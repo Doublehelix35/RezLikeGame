@@ -10,6 +10,8 @@ public class SceneController : MonoBehaviour
     public bool UseTimer = false;
     public float TimerDelay = 0f;
 
+    public int scenenumberino = 1;
+
     IEnumerator coroutine;
 
     void Start()
@@ -32,5 +34,7 @@ public class SceneController : MonoBehaviour
     public void LoadLevel()
     {
         SceneManager.LoadScene(NextLevelName);
+
+        scenenumberino ++;
     }
 }
