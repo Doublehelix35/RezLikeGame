@@ -13,29 +13,18 @@ public class PlayerStationary : MonoBehaviour
 
     void Update()
     {
-        // Check for offset changes
-        if (Input.GetKey(KeyCode.LeftArrow)) // X axis
+        // Horizontal movement offset
+        if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.01f)
         {
-            CurrentOffset.x -= PlayerSpeed * Time.deltaTime;
-
-            CurrentOffset.x = Mathf.Clamp(CurrentOffset.x, -MaxOffset, MaxOffset);
-        }
-        else if (Input.GetKey(KeyCode.RightArrow))
-        {
-            CurrentOffset.x += PlayerSpeed * Time.deltaTime;
+            CurrentOffset.x += Input.GetAxis("Horizontal") * PlayerSpeed * Time.deltaTime;
 
             CurrentOffset.x = Mathf.Clamp(CurrentOffset.x, -MaxOffset, MaxOffset);
         }
 
-        if (Input.GetKey(KeyCode.UpArrow)) // Y axis
+        // Vertical movement offset
+        if (Mathf.Abs(Input.GetAxis("Vertical")) > 0.01f)
         {
-            CurrentOffset.y += PlayerSpeed * Time.deltaTime;
-
-            CurrentOffset.y = Mathf.Clamp(CurrentOffset.y, -MaxOffset, MaxOffset);
-        }
-        else if (Input.GetKey(KeyCode.DownArrow))
-        {
-            CurrentOffset.y -= PlayerSpeed * Time.deltaTime;
+            CurrentOffset.y += Input.GetAxis("Vertical") * PlayerSpeed * Time.deltaTime;
 
             CurrentOffset.y = Mathf.Clamp(CurrentOffset.y, -MaxOffset, MaxOffset);
         }
