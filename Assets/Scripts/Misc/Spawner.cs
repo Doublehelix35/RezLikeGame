@@ -16,6 +16,7 @@ public class Spawner : MonoBehaviour
     public float SpawnChance;
 
     public bool UseScaleModifier = false; // Picks a random scale between normal and scale modifier
+    public bool UseSpawnerRotation = true; // If true uses spawners rotation
 
     public Vector3 DefaultScale; // Not all scale is 1,1,1
     public Vector3 ScaleModifierMax; // Max scale for each axis
@@ -49,6 +50,7 @@ public class Spawner : MonoBehaviour
             // Random chance to spawn bee
             if(randChance <= SpawnChance)
             {
+                // Random position
                 float randX = 0f;
                 float randY = 0f;
                 float randZ = 0f;
@@ -57,17 +59,21 @@ public class Spawner : MonoBehaviour
                 if (RandomYSpawn) { randY = Random.Range(-SpawnRadius, SpawnRadius); }
                 if (RandomZSpawn) { randZ = Random.Range(-SpawnRadius, SpawnRadius); }
 
-                // Spawn prefab
+                // Set position for prefab spawn
                 Vector3 pos = new Vector3(transform.position.x + randX, transform.position.y + randY, transform.position.z + randZ);
-                GameObject GO = Instantiate(PrefabToSpawn, pos, transform.rotation);
 
-                float rotX = RandomXRotation ? Random.Range(0, 180) : 0f;
-                float rotY = RandomYRotation ? Random.Range(0, 180) : 0f;
-                float rotZ = RandomZRotation ? Random.Range(0, 180) : 0f;
+                // Instantiate game object
+                GameObject GO = UseSpawnerRotation ?  Instantiate(PrefabToSpawn, pos, transform.rotation) // Spawner rotation
+                                                        : Instantiate(PrefabToSpawn, pos, Quaternion.identity); // Default rotation
 
+                // Random rotation
+                float rotX = RandomXRotation ? Random.Range(0, 180) : GO.transform.eulerAngles.x;
+                float rotY = RandomYRotation ? Random.Range(0, 180) : GO.transform.eulerAngles.y;
+                float rotZ = RandomZRotation ? Random.Range(0, 180) : GO.transform.eulerAngles.z;
 
                 GO.transform.Rotate(new Vector3(rotX, rotY, rotZ));
 
+                // Random scale
                 if (UseScaleModifier)
                 {
                     // Random modifier between default and Scale modifier max
@@ -80,7 +86,7 @@ public class Spawner : MonoBehaviour
                                                           GO.transform.localScale.z * scaleModifier.z);
                 }
 
-                // Change spawn frequency random
+                // Change spawn frequency
                 SpawnFrequencyRandom = Random.Range(-SpawnFrequencyMaxRandom, SpawnFrequencyMaxRandom);
             }            
         }        

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DirectionalMove : MonoBehaviour
 {
+    public bool UseWorldSpace = true; // Move in world space or local
+
     [Range(-1, 1)]
     public float DirectionX;
     [Range(-1, 1)]
@@ -31,6 +33,14 @@ public class DirectionalMove : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        transform.Translate(Dir * Speed, Space.World);
+        if (UseWorldSpace)
+        {
+            transform.Translate(Dir * Speed, Space.World);
+        }
+        else
+        {
+            transform.Translate(Dir * Speed, Space.Self);
+        }
+        
     }
 }
