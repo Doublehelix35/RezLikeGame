@@ -325,6 +325,7 @@ MonoBehaviour:
   SpawnFrequency: 0.5
   SpawnChance: 0.6
   UseScaleModifier: 1
+  UseSpawnerRotation: 1
   DefaultScale: {x: 1, y: 1, z: 1}
   ScaleModifierMax: {x: 1.2, y: 1.2, z: 1.2}
   RandomXSpawn: 1
@@ -382,6 +383,7 @@ MonoBehaviour:
   SpawnFrequency: 2.1
   SpawnChance: 0.6
   UseScaleModifier: 1
+  UseSpawnerRotation: 1
   DefaultScale: {x: 1, y: 1, z: 1}
   ScaleModifierMax: {x: 1.1, y: 1.1, z: 1.1}
   RandomXSpawn: 1
@@ -515,6 +517,7 @@ MonoBehaviour:
   SpawnFrequency: 2.3
   SpawnChance: 0.6
   UseScaleModifier: 1
+  UseSpawnerRotation: 1
   DefaultScale: {x: 1, y: 1, z: 1}
   ScaleModifierMax: {x: 1.1, y: 1.1, z: 1.1}
   RandomXSpawn: 1
@@ -1342,6 +1345,7 @@ MonoBehaviour:
   SpawnFrequency: 2.2
   SpawnChance: 0.6
   UseScaleModifier: 1
+  UseSpawnerRotation: 1
   DefaultScale: {x: 1, y: 1, z: 1}
   ScaleModifierMax: {x: 1.1, y: 1.1, z: 1.1}
   RandomXSpawn: 1
@@ -1461,6 +1465,7 @@ GameObject:
   - component: {fileID: 1330226007}
   - component: {fileID: 1330226006}
   - component: {fileID: 1330226005}
+  - component: {fileID: 1330226009}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -1540,6 +1545,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1330226009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330226004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee1881e9a2f8151418204150f39eb97e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveDirectionSpeed: {x: 0, y: -0.2}
 --- !u!1 &1416281203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,6 +1694,7 @@ MonoBehaviour:
   SpawnFrequency: 0.5
   SpawnChance: 0.8
   UseScaleModifier: 1
+  UseSpawnerRotation: 1
   DefaultScale: {x: 1, y: 1, z: 1}
   ScaleModifierMax: {x: 1.2, y: 1.2, z: 1.2}
   RandomXSpawn: 1
@@ -2577,6 +2596,7 @@ MonoBehaviour:
   SpawnFrequency: 1
   SpawnChance: 0.8
   UseScaleModifier: 0
+  UseSpawnerRotation: 1
   DefaultScale: {x: 0, y: 0, z: 0}
   ScaleModifierMax: {x: 0, y: 0, z: 0}
   RandomXSpawn: 1
