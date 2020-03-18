@@ -12,9 +12,14 @@ public class SnakeManager : MonoBehaviour
     float InvunerableStartTime; // Stores the time of the invunerability start
     bool IsInvunerable = false;
 
+    SceneController ControllerRef;
+
 
     void Start()
     {
+        // Init controller ref
+        ControllerRef = GameObject.FindGameObjectWithTag("GameController").GetComponent<SceneController>();
+
         // Calc health
         Health = HealthPerPiece * SnakePieces.Count;
 
@@ -106,6 +111,9 @@ public class SnakeManager : MonoBehaviour
 
         // Remove from pieces list
         SnakePieces.Remove(pieceToDestroy);
+
+        // Increase condition count
+        ControllerRef.AddToConditionCount();
 
         // Destroy piece
         Destroy(pieceToDestroy);

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.39621288, g: 0.7252653, b: 0.6729914, a: 1}
+  m_IndirectSpecularColor: {r: 0.39621285, g: 0.72526544, b: 0.6729898, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1151,6 +1151,7 @@ MonoBehaviour:
   cursorreplacement: {fileID: 187078734}
   laserprefab: {fileID: 3809442928978866920, guid: 66d40c8bc9313a74db1d77f9c93050d3,
     type: 3}
+  IsBeeScene: 1
 --- !u!114 &963194232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2366,6 +2367,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6788420335662553069, guid: 5c34ba22d7162e84d909fd0993509523,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameController
+      objectReference: {fileID: 0}
     - target: {fileID: 878428041461426797, guid: 5c34ba22d7162e84d909fd0993509523,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2435,6 +2441,11 @@ PrefabInstance:
         type: 3}
       propertyPath: TimerDelay
       value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4093671218664904579, guid: 5c34ba22d7162e84d909fd0993509523,
+        type: 3}
+      propertyPath: ConditionMin
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c34ba22d7162e84d909fd0993509523, type: 3}

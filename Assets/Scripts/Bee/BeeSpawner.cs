@@ -12,6 +12,14 @@ public class BeeSpawner : MonoBehaviour
 
     public string CurrentSceneName; // Start scene name
 
+    SceneController ControllerRef;
+
+    void Start()
+    {
+        // Init controller ref
+        ControllerRef = GameObject.FindGameObjectWithTag("GameController").GetComponent<SceneController>();
+    }
+
     internal void OnBeeDestroy()
     {
         if (BeePrefab != null)
@@ -22,6 +30,9 @@ public class BeeSpawner : MonoBehaviour
             {
                 GameObject GO = Instantiate(BeePrefab, transform.position, Quaternion.identity);
             }
+
+            // Increase condition count
+            ControllerRef.AddToConditionCount();
         }
         else
         {

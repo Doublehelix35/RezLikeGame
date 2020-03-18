@@ -18,9 +18,16 @@ public class LockOnV2 : MonoBehaviour
 
     public GameObject laserprefab;
 
+    // For condition scene transitions
+    SceneController ControllerRef;
+    public bool IsBeeScene = false;
+
     // Start is called before the first frame update
     void Start()
     {
+        // Init controller ref
+        ControllerRef = GameObject.FindGameObjectWithTag("GameController").GetComponent<SceneController>();
+
         enemies = new GameObject[maxlock];
         alltargets = new Image[maxlock];
         currentlocknum = 0;
@@ -49,6 +56,19 @@ public class LockOnV2 : MonoBehaviour
                     {
                         enemies[i].GetComponent<BeeSpawner>().OnBeeDestroy();
                         Destroy(enemies[i]);
+                    }
+                    else if(enemies[i].tag == "Bee")
+                    {
+                        if (IsBeeScene)
+                        {
+                            // Increase condition count
+                            ControllerRef.AddToConditionCount();
+                            Destroy(enemies[i]);
+                        }
+                        else
+                        {
+                            Destroy(enemies[i]);
+                        }
                     }
                     else
                     {

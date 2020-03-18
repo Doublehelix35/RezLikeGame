@@ -5345,6 +5345,7 @@ MonoBehaviour:
   cursorreplacement: {fileID: 1409679245}
   laserprefab: {fileID: 3809442928978866920, guid: 66d40c8bc9313a74db1d77f9c93050d3,
     type: 3}
+  IsBeeScene: 0
 --- !u!1001 &967565955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11049,20 +11050,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6788420335662553069, guid: 5c34ba22d7162e84d909fd0993509523,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameController
+      objectReference: {fileID: 0}
     - target: {fileID: 878428041461426797, guid: 5c34ba22d7162e84d909fd0993509523,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 561.676
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 878428041461426797, guid: 5c34ba22d7162e84d909fd0993509523,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 306.69708
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 878428041461426797, guid: 5c34ba22d7162e84d909fd0993509523,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.283123
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 878428041461426797, guid: 5c34ba22d7162e84d909fd0993509523,
         type: 3}
@@ -11107,7 +11113,7 @@ PrefabInstance:
     - target: {fileID: 4093671218664904579, guid: 5c34ba22d7162e84d909fd0993509523,
         type: 3}
       propertyPath: UseTimer
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4093671218664904579, guid: 5c34ba22d7162e84d909fd0993509523,
         type: 3}
@@ -11118,6 +11124,11 @@ PrefabInstance:
         type: 3}
       propertyPath: NextLevelName
       value: WinScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4093671218664904579, guid: 5c34ba22d7162e84d909fd0993509523,
+        type: 3}
+      propertyPath: ConditionMin
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c34ba22d7162e84d909fd0993509523, type: 3}

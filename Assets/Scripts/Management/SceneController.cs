@@ -7,34 +7,48 @@ public class SceneController : MonoBehaviour
 {
     public string NextLevelName;
 
-    public bool UseTimer = false;
-    public float TimerDelay = 0f;
-
     public int scenenumberino = 1;
 
-    IEnumerator coroutine;
+    public int ConditionMin = 1;
+    int CurConditionCount = 0;
 
-    void Start()
-    {
-        // Start coroutine
-        if (UseTimer)
-        {
-            coroutine = GoToNextLevel();
-            StartCoroutine(coroutine);
-        }        
-    }
+    //public bool UseTimer = false;
+    //public float TimerDelay = 0f;
 
-    IEnumerator GoToNextLevel()
-    {
-        yield return new WaitForSeconds(TimerDelay);
+    //IEnumerator coroutine;
 
-        LoadLevel();
-    }
+    //void Start()
+    //{
+    //    // Start coroutine
+    //    if (UseTimer)
+    //    {
+    //        coroutine = GoToNextLevel();
+    //        StartCoroutine(coroutine);
+    //    }        
+    //}
+
+    //IEnumerator GoToNextLevel()
+    //{
+    //    yield return new WaitForSeconds(TimerDelay);
+
+    //    LoadLevel();
+    //}
 
     public void LoadLevel()
     {
         SceneManager.LoadScene(NextLevelName);
 
         scenenumberino ++;
+    }
+
+    public void AddToConditionCount()
+    {
+        CurConditionCount++;
+
+        if(CurConditionCount >= ConditionMin)
+        {
+            // Go to next scene
+            LoadLevel();
+        }
     }
 }
