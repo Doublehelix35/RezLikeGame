@@ -1564,6 +1564,39 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1731291766}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &334909811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 334909811, guid: db36ace2234e4b743bfa4e794500843c,
+    type: 3}
+  m_PrefabInstance: {fileID: 7895710852772417431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &334909814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334909811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a44441d2e217c874a82f1ae30e5310ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PrefabToSpawn: {fileID: 2584769443990704934, guid: 19fc1a9507ca8aa43bf09f55c41c7094,
+    type: 3}
+  SpawnRadius: 0.1
+  SpawnFrequency: 5
+  SpawnChance: 1
+  UseScaleModifier: 1
+  UseSpawnerRotation: 1
+  DefaultScale: {x: 1, y: 1, z: 1}
+  ScaleModifierMax: {x: 1.3, y: 1.3, z: 1.3}
+  RandomXSpawn: 1
+  RandomYSpawn: 1
+  RandomZSpawn: 1
+  RandomXRotation: 0
+  RandomYRotation: 0
+  RandomZRotation: 0
 --- !u!1001 &344076029
 PrefabInstance:
   m_ObjectHideFlags: 0
