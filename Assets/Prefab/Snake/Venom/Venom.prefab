@@ -110,7 +110,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 922bdf38a9778c24c820c71cf11ce62a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 6
+  Speed: 1
+  OnlyTargetIsPlayer: 1
 --- !u!114 &4744270923031302314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,7 +125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5, type: 3}
-  locked: 0
 --- !u!65 &9008595845570835785
 BoxCollider:
   m_ObjectHideFlags: 0

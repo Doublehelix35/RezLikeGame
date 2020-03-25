@@ -6,7 +6,6 @@ public class DisableOnTouch : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collided with " + other.tag);
         if(other.tag == "Scenery")
         {
             // Disable other gameobject 

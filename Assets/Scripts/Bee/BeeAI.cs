@@ -5,30 +5,69 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class BeeAI : MonoBehaviour
 {
-    GameObject PlayerRef;
+    Transform PlayerRef;
     public float Speed = 1f;
+    float SpeedOffset = 800f;
 
     Rigidbody Rigid;
+    
+    public bool OnlyTargetIsPlayer = true;
 
+    // For bees which use temp target
+    Transform TempTargetRef;
+    float DelayTime = 2f;
+    bool HasSwitchedTargets = false;
+    IEnumerator coroutine;
 
     void Start()
     {
+        // Init refs
         Rigid = GetComponent<Rigidbody>();
-        PlayerRef = GameObject.FindGameObjectWithTag("Player");
+        PlayerRef = GameObject.FindGameObjectWithTag("Player").transform;
+
+        if (!OnlyTargetIsPlayer)
+        {
+            TempTargetRef = GameObject.FindGameObjectWithTag("TempTarget").transform;
+
+            // Start coroutine
+            coroutine = ChangeTarget();
+            StartCoroutine(coroutine);
+        }
+        
     }
 
     void FixedUpdate()
     {
         if(PlayerRef != null)
         {
-            // Head to player
-            Vector3 dir = PlayerRef.transform.position - transform.position;
+            if (OnlyTargetIsPlayer)
+            {
+                // Head to player
+                Vector3 dir = PlayerRef.position - transform.position;
+                dir = dir.normalized;
 
-            Rigid.AddForce(dir * Speed, ForceMode.Force);
+                Rigid.velocity = dir * Speed * SpeedOffset * Time.fixedDeltaTime;
+            }
+            else
+            {
+                // Head to player or temp target
+                Vector3 target = HasSwitchedTargets ? PlayerRef.transform.position : TempTargetRef.position;
+                Vector3 dir = target - transform.position;
+                //dir = dir.normalized;
+
+                Rigid.AddForce(dir * Speed, ForceMode.Force);                            
+            }
 
             // Face the player
-            transform.LookAt(PlayerRef.transform);
+            transform.LookAt(PlayerRef);
         }
     }
-        
+
+    IEnumerator ChangeTarget()
+    {
+        yield return new WaitForSeconds(DelayTime);
+
+        // Change target
+        HasSwitchedTargets = true;
+    }
 }

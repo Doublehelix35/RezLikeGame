@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public Slider SliderRef;
+    LockOnV2 LockOnV2Ref; 
 
     public int MaxHealth = 5;
     int CurHealth;
@@ -22,6 +23,8 @@ public class PlayerHealth : MonoBehaviour
         SliderRef.maxValue = MaxHealth;
         SliderRef.value = MaxHealth;
 
+        // Init ref
+        LockOnV2Ref = Camera.main.gameObject.GetComponent<LockOnV2>();
     }
 
     void OnCollisionEnter(Collision col)
@@ -31,8 +34,9 @@ public class PlayerHealth : MonoBehaviour
             // Lose health
             ChangeHealth(DamageValue);
 
-            // Destroy bee
-            Destroy(col.gameObject);
+            // Disable bee
+            col.gameObject.GetComponent<LockOnV1>().locked = false;
+            col.gameObject.SetActive(false);
         }
         else if(col.gameObject.tag == "Enemy")
         {

@@ -547,6 +547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 5132961706560631088, guid: 70869856dab3e8b4e8c96e8598a57771,
     type: 3}
+  MaxPoolSize: 5
   SpawnRadius: 12
   SpawnFrequency: 0.1
   SpawnChance: 0.6
@@ -689,6 +690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 1235509896317861997, guid: 2426f140efb07444187928a542d79ba7,
     type: 3}
+  MaxPoolSize: 5
   SpawnRadius: 15
   SpawnFrequency: 0.1
   SpawnChance: 0.8
@@ -2607,6 +2609,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9b858386a1ba79d4b9c4d3c9d2613558, type: 3}
+--- !u!1 &1054288228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1054288229}
+  m_Layer: 0
+  m_Name: TempTargetForBees
+  m_TagString: TempTarget
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1054288229
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1054288228}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2110288647}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1114989684 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
@@ -2820,6 +2852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 1235509896317861997, guid: 2426f140efb07444187928a542d79ba7,
     type: 3}
+  MaxPoolSize: 5
   SpawnRadius: 16
   SpawnFrequency: 0.5
   SpawnChance: 0.8
@@ -4585,6 +4618,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 5132961706560631088, guid: 70869856dab3e8b4e8c96e8598a57771,
     type: 3}
+  MaxPoolSize: 5
   SpawnRadius: 12
   SpawnFrequency: 0.5
   SpawnChance: 0.6
@@ -5144,7 +5178,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5.51, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1054288229}
   m_Father: {fileID: 728201561}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

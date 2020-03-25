@@ -7,7 +7,7 @@ public class LockOnV2 : MonoBehaviour
 {
     public Image targeticon;
     //List<Image> alltargets = new List<Image>();
-    Image[] alltargets;
+    Image[] alltargetimages;
 
     public int maxlock;
     //List<GameObject> enemies = new List<GameObject>();
@@ -21,23 +21,25 @@ public class LockOnV2 : MonoBehaviour
     // For condition scene transitions
     SceneController ControllerRef;
     public bool IsBeeScene = false;
+    Transform CanvasRef;
 
-    // Start is called before the first frame update
+
     void Start()
     {
-        // Init controller ref
+        // Init refs
         ControllerRef = GameObject.FindGameObjectWithTag("GameController").GetComponent<SceneController>();
+        CanvasRef = GameObject.Find("Canvas").transform;
 
         enemies = new GameObject[maxlock];
-        alltargets = new Image[maxlock];
+        alltargetimages = new Image[maxlock];
         currentlocknum = 0;
 
         Cursor.visible = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
+        // Fire lasers
         if (Input.GetButtonDown("Fire1"))
         {
             for (int i = 0; i < maxlock; i++)
@@ -63,11 +65,13 @@ public class LockOnV2 : MonoBehaviour
                         {
                             // Increase condition count
                             ControllerRef.AddToConditionCount();
-                            Destroy(enemies[i]);
+                            enemies[i].GetComponent<LockOnV1>().locked = false;
+                            enemies[i].SetActive(false);
                         }
                         else
                         {
-                            Destroy(enemies[i]);
+                            enemies[i].GetComponent<LockOnV1>().locked = false;
+                            enemies[i].SetActive(false);
                         }
                     }
                     else
@@ -75,18 +79,17 @@ public class LockOnV2 : MonoBehaviour
                         Destroy(enemies[i]);
                     }
 
-                    Destroy(alltargets[i].gameObject);
+                    Destroy(alltargetimages[i].gameObject);
 
                     enemies[i] = null;
-                    alltargets[i] = null;
+                    alltargetimages[i] = null;
 
                     currentlocknum = 0;
-
-                    //Debug.Log("Succ");
                 }
             }
         }
 
+        // Update target image positions
         for (int i = 0; i < maxlock; i++)
         {
             if (enemies[i] != null)
@@ -96,15 +99,13 @@ public class LockOnV2 : MonoBehaviour
                 mypos = Camera.main.WorldToScreenPoint(mypos);
                 mypos = new Vector3(mypos.x, mypos.y, 0);
 
-                alltargets[i].transform.position = mypos;
-
-                //Debug.Log("Succ");
+                alltargetimages[i].transform.position = mypos;                
             }
         }
 
         //cursorreplacement.transform.position = Camera.main.WorldToScreenPoint(Input.mousePosition);
         //cursorreplacement.transform.position = (new Vector3(cursorreplacement.transform.position.x, cursorreplacement.transform.position.y, 0));
-        cursorreplacement.transform.position = (new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0));
+        cursorreplacement.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 0);
 
     }
 
@@ -121,25 +122,19 @@ public class LockOnV2 : MonoBehaviour
                 
                 mypos = new Vector3(mypos.x, mypos.y, 0);
 
-                alltargets[i] = Instantiate(targeticon, mypos, Quaternion.Euler(0, 0, 0));
-                alltargets[i].transform.SetParent(GameObject.Find("Canvas").transform);
+                alltargetimages[i] = Instantiate(targeticon, mypos, Quaternion.Euler(0, 0, 0));
+                alltargetimages[i].transform.SetParent(CanvasRef);
 
                 //alltargets[i].name = "Target " + i;
 
-                //Debug.Log(enemies[i].name);
-
-                currentlocknum += 1;
+                currentlocknum ++;
 
                 break;
-
-                
             }
         }
-
-        //Debug.Log(enemies.Length);
     }
 
-    public void purge(GameObject enemy)
+    internal void purge(GameObject enemy)
     {
         for (int i = 0; i < maxlock; i++)
         {
@@ -148,15 +143,13 @@ public class LockOnV2 : MonoBehaviour
                 /*var laserspawn = Instantiate(laserprefab);
                 laserspawn.GetComponent<LaserPositions>().enemy = enemies[i];*/
 
-                Destroy(enemies[i]);
-                Destroy(alltargets[i].gameObject);
+                //Destroy(enemies[i]);
+                Destroy(alltargetimages[i].gameObject);
 
                 enemies[i] = null;
-                alltargets[i] = null;
+                alltargetimages[i] = null;
 
                 currentlocknum = 0;
-
-                //Debug.Log("Succ");
             }
         }
     }
