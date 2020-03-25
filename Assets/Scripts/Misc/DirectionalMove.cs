@@ -17,19 +17,9 @@ public class DirectionalMove : MonoBehaviour
 
     public float Speed = 1f;
 
-    public bool DestroyAfterTimeDelay = false;
-
-    public float TimeDelayForDestruction = 1f;
-
     void Start()
     {
         Dir = new Vector3(DirectionX, DirectionY, DirectionZ);
-
-        // Destroy after delay
-        if (DestroyAfterTimeDelay)
-        {
-            Destroy(gameObject, TimeDelayForDestruction);
-        }
     }
     private void FixedUpdate()
     {

@@ -132,10 +132,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockSpawner (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693045, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
         type: 3}
@@ -190,15 +195,114 @@ PrefabInstance:
     - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
         type: 3}
       propertyPath: SpawnRadius
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
         type: 3}
       propertyPath: SpawnFrequency
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: ScaleModifierMax.x
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: ScaleModifierMax.y
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: ScaleModifierMax.z
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: MaxPoolSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: RandomZSpawn
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d7994ec5ebcd2741a4630e29c656e2d, type: 3}
+--- !u!1 &89892196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 89892199}
+  - component: {fileID: 89892198}
+  - component: {fileID: 89892197}
+  - component: {fileID: 89892200}
+  m_Layer: 0
+  m_Name: KillZone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &89892197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89892196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e095af954805140b2bfbe25e43aea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &89892198
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89892196}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 125, y: 30, z: 10}
+  m_Center: {x: 0, y: -5, z: 0}
+--- !u!4 &89892199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89892196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &89892200
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89892196}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &100221902
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,16 +425,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 5132961706560631088, guid: 70869856dab3e8b4e8c96e8598a57771,
     type: 3}
-  SpawnRadius: 12
+  MaxPoolSize: 25
+  SpawnRadius: 17
   SpawnFrequency: 0.5
-  SpawnChance: 0.6
+  SpawnChance: 0.8
   UseScaleModifier: 1
   UseSpawnerRotation: 1
   DefaultScale: {x: 1, y: 1, z: 1}
   ScaleModifierMax: {x: 1.2, y: 1.2, z: 1.2}
   RandomXSpawn: 1
   RandomYSpawn: 0
-  RandomZSpawn: 1
+  RandomZSpawn: 0
   RandomXRotation: 0
   RandomYRotation: 1
   RandomZRotation: 0
@@ -342,7 +447,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200892143}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: -5, z: 50}
+  m_LocalPosition: {x: -25, y: -5, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -364,7 +469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &220437268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,6 +484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
+  MaxPoolSize: 5
   SpawnRadius: 4
   SpawnFrequency: 2.1
   SpawnChance: 0.6
@@ -498,7 +604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &495531333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -513,6 +619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
+  MaxPoolSize: 5
   SpawnRadius: 4
   SpawnFrequency: 2.3
   SpawnChance: 0.6
@@ -857,7 +964,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 793616099}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -30.527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -953,6 +1060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DelayTime: 2
+  IsDestroyable: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,7 +1141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
-  m_LocalPosition: {x: 0, y: 2.714, z: -6.773}
+  m_LocalPosition: {x: 0, y: 2.714, z: -37.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1326,7 +1434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1185288067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1341,6 +1449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 704965411410045301, guid: 45313965b535b2e4eab688a865fc543f,
     type: 3}
+  MaxPoolSize: 5
   SpawnRadius: 4
   SpawnFrequency: 2.2
   SpawnChance: 0.6
@@ -1690,7 +1799,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 1235509896317861997, guid: 2426f140efb07444187928a542d79ba7,
     type: 3}
-  SpawnRadius: 15
+  MaxPoolSize: 20
+  SpawnRadius: 20
   SpawnFrequency: 0.5
   SpawnChance: 0.8
   UseScaleModifier: 1
@@ -1699,7 +1809,7 @@ MonoBehaviour:
   ScaleModifierMax: {x: 1.2, y: 1.2, z: 1.2}
   RandomXSpawn: 1
   RandomYSpawn: 0
-  RandomZSpawn: 1
+  RandomZSpawn: 0
   RandomXRotation: 0
   RandomYRotation: 1
   RandomZRotation: 0
@@ -1711,7 +1821,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480243467}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: -3.4, z: 50}
+  m_LocalPosition: {x: -25, y: -3.4, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2001,7 +2111,7 @@ PrefabInstance:
     - target: {fileID: 6270012993925992650, guid: a12bc1f3c358d954db0607e29e7952b4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: -31.527
       objectReference: {fileID: 0}
     - target: {fileID: 6270012993925992650, guid: a12bc1f3c358d954db0607e29e7952b4,
         type: 3}
@@ -2110,10 +2220,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: TreeSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 1158048169800449555, guid: a8fff5fe27ea39c4ab212941a7ae6e2c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1158048169800449565, guid: a8fff5fe27ea39c4ab212941a7ae6e2c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1158048169800449565, guid: a8fff5fe27ea39c4ab212941a7ae6e2c,
         type: 3}
@@ -2165,6 +2280,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1158048169800449564, guid: a8fff5fe27ea39c4ab212941a7ae6e2c,
+        type: 3}
+      propertyPath: MaxPoolSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158048169800449564, guid: a8fff5fe27ea39c4ab212941a7ae6e2c,
+        type: 3}
+      propertyPath: SpawnChance
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158048169800449564, guid: a8fff5fe27ea39c4ab212941a7ae6e2c,
+        type: 3}
+      propertyPath: SpawnRadius
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1158048169800449564, guid: a8fff5fe27ea39c4ab212941a7ae6e2c,
+        type: 3}
+      propertyPath: RandomZSpawn
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8fff5fe27ea39c4ab212941a7ae6e2c, type: 3}
 --- !u!1001 &500452831908319358
@@ -2178,6 +2313,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BeeSpawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 500452830502555801, guid: 6199ec7f102c0c549bcd6b25c090b61d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 500452830502555799, guid: 6199ec7f102c0c549bcd6b25c090b61d,
         type: 3}
@@ -2248,10 +2388,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: BushSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 1423734893143375651, guid: 8f0eed1d6abeab44db34d9dcd6809ca1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1423734893143375661, guid: 8f0eed1d6abeab44db34d9dcd6809ca1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1423734893143375661, guid: 8f0eed1d6abeab44db34d9dcd6809ca1,
         type: 3}
@@ -2303,6 +2448,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1423734893143375660, guid: 8f0eed1d6abeab44db34d9dcd6809ca1,
+        type: 3}
+      propertyPath: MaxPoolSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423734893143375660, guid: 8f0eed1d6abeab44db34d9dcd6809ca1,
+        type: 3}
+      propertyPath: RandomZSpawn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1423734893143375660, guid: 8f0eed1d6abeab44db34d9dcd6809ca1,
+        type: 3}
+      propertyPath: SpawnRadius
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f0eed1d6abeab44db34d9dcd6809ca1, type: 3}
 --- !u!1001 &1832043521436675115
@@ -2330,7 +2490,7 @@ PrefabInstance:
     - target: {fileID: 1832043520500699494, guid: bbadef04c35a38946acccca7ee556c46,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -30.527
       objectReference: {fileID: 0}
     - target: {fileID: 1832043520500699494, guid: bbadef04c35a38946acccca7ee556c46,
         type: 3}
@@ -2371,6 +2531,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832043520500699494, guid: bbadef04c35a38946acccca7ee556c46,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832043520500699494, guid: bbadef04c35a38946acccca7ee556c46,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832043520500699494, guid: bbadef04c35a38946acccca7ee556c46,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbadef04c35a38946acccca7ee556c46, type: 3}
@@ -2480,10 +2655,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: RockSpawner
       objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693045, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2114717269022693051, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
         type: 3}
@@ -2538,12 +2718,37 @@ PrefabInstance:
     - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
         type: 3}
       propertyPath: SpawnRadius
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
         type: 3}
       propertyPath: SpawnFrequency
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: ScaleModifierMax.x
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: ScaleModifierMax.y
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: ScaleModifierMax.z
+      value: 1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: MaxPoolSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2114717269022693050, guid: 3d7994ec5ebcd2741a4630e29c656e2d,
+        type: 3}
+      propertyPath: RandomZSpawn
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d7994ec5ebcd2741a4630e29c656e2d, type: 3}
@@ -2572,7 +2777,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8213788444225316408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 50}
+  m_LocalPosition: {x: 0, y: 1, z: 36.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2592,13 +2797,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 3056776273046168709, guid: e234083fbfafa87488e9fdb0292db56b,
     type: 3}
+  MaxPoolSize: 20
   SpawnRadius: 0.5
   SpawnFrequency: 1
   SpawnChance: 0.8
   UseScaleModifier: 0
   UseSpawnerRotation: 1
-  DefaultScale: {x: 0, y: 0, z: 0}
-  ScaleModifierMax: {x: 0, y: 0, z: 0}
+  DefaultScale: {x: 8, y: 8, z: 0.2}
+  ScaleModifierMax: {x: 8.2, y: 8.2, z: 8.2}
   RandomXSpawn: 1
   RandomYSpawn: 0
   RandomZSpawn: 1

@@ -12,11 +12,11 @@ public class DisableDelay : MonoBehaviour
     void Start()
     {
         // Start coroutine
-        coroutine = SpawnPrefab();
+        coroutine = Disable();
         StartCoroutine(coroutine);
     }
 
-    IEnumerator SpawnPrefab()
+    IEnumerator Disable()
     {
         yield return new WaitForSeconds(DelayTime);
 

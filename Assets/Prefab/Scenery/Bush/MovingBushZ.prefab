@@ -395,9 +395,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4097928186164878447}
   - component: {fileID: 2535127993524368246}
+  - component: {fileID: 7269741181315363340}
+  - component: {fileID: -3794192414227376493}
   m_Layer: 0
   m_Name: MovingBushZ
-  m_TagString: Untagged
+  m_TagString: Scenery
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -429,12 +431,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a57cc61347b277e4fbc6e874d4ae9249, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UseWorldSpace: 1
   DirectionX: 0
   DirectionY: 0
   DirectionZ: -1
   Speed: 0.2
-  DestroyAfterTimeDelay: 1
-  TimeDelayForDestruction: 10
+--- !u!114 &7269741181315363340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235509896317861997}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e87d6c38f2617074a9e86c2c5e1ad254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DelayTime: 10
+  IsDestroyable: 0
+--- !u!65 &-3794192414227376493
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235509896317861997}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1353257143183626705
 GameObject:
   m_ObjectHideFlags: 0
