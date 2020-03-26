@@ -25,6 +25,7 @@ public class SoundManager : MonoBehaviour
     public GameObject Gameman;
     public int Scenenum;
 
+    public GameObject Cam; //Camera Used to get Audio source etc
 
     //music for scenes
     public AudioClip scene1Music; //BeeScene
@@ -202,8 +203,13 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Cam = GameObject.FindGameObjectWithTag("MainCamera");
+
+        musicSource = Cam.GetComponent<AudioSource>();
+
         musicSource.Play();
 
+        Gameman = GameObject.FindGameObjectWithTag("GameController");
         Scenenum = Gameman.GetComponent<SceneController>().scenenumberino;
 
         levelMusicPlay();
