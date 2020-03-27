@@ -16,13 +16,17 @@ public class LockOnV2 : MonoBehaviour
 
     public GameObject cursorreplacement;
 
-    public GameObject laserprefab;
+    public GameObject laserPrefab;
 
     // For condition scene transitions
     SceneController ControllerRef;
     public bool IsBeeScene = false;
     Transform CanvasRef;
 
+    // Shoot to the beat
+    IEnumerator coroutine;
+    bool IsAbleToShoot = true;
+    public float BeatDelay = 0.5f;
 
     void Start()
     {
@@ -35,58 +39,22 @@ public class LockOnV2 : MonoBehaviour
         currentlocknum = 0;
 
         Cursor.visible = false;
+
+        // Start coroutine
+        coroutine = ShootToBeat();
+
+        // Call shoot to beat coroutine
+        StartCoroutine(coroutine);
+
     }
 
     void Update()
     {
         // Fire lasers
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && IsAbleToShoot)
         {
-            for (int i = 0; i < maxlock; i++)
-            {
-                if (enemies[i] != null)
-                {
-                    var laserspawn = Instantiate(laserprefab);
-                    laserspawn.GetComponent<LaserPositions>().enemy = enemies[i];
-
-                    if (enemies[i].tag == "Snake")
-                    {
-                        GameObject.Find("SnakeHead").GetComponent<SnakeManager>().LoseHealth(1);
-                        enemies[i].GetComponent<LockOnV1>().locked = false;
-                    }
-                    else if (enemies[i].tag == "Ring")
-                    {
-                        enemies[i].GetComponent<BeeSpawner>().OnBeeDestroy();
-                        Destroy(enemies[i]);
-                    }
-                    else if(enemies[i].tag == "Bee")
-                    {
-                        if (IsBeeScene)
-                        {
-                            // Increase condition count
-                            ControllerRef.AddToConditionCount();
-                            enemies[i].GetComponent<LockOnV1>().locked = false;
-                            enemies[i].SetActive(false);
-                        }
-                        else
-                        {
-                            enemies[i].GetComponent<LockOnV1>().locked = false;
-                            enemies[i].SetActive(false);
-                        }
-                    }
-                    else
-                    {
-                        Destroy(enemies[i]);
-                    }
-
-                    Destroy(alltargetimages[i].gameObject);
-
-                    enemies[i] = null;
-                    alltargetimages[i] = null;
-
-                    currentlocknum = 0;
-                }
-            }
+            // Set is able to shoot
+            IsAbleToShoot = false;            
         }
 
         // Update target image positions
@@ -152,5 +120,69 @@ public class LockOnV2 : MonoBehaviour
                 currentlocknum = 0;
             }
         }
+    }
+
+    IEnumerator ShootToBeat()
+    {
+        while (true)
+        {
+            // Wait until is able to shoot is false
+            yield return new WaitUntil(() => !IsAbleToShoot);
+
+            if (!IsAbleToShoot)
+            {
+                // Shoot all locked on enemies
+                for (int i = 0; i < maxlock; i++)
+                {
+                    if (enemies[i] != null)
+                    {
+                        GameObject laserSpawn = Instantiate(laserPrefab);
+                        laserSpawn.GetComponent<LaserPositions>().enemy = enemies[i];
+
+                        if (enemies[i].tag == "Snake")
+                        {
+                            GameObject.Find("SnakeHead").GetComponent<SnakeManager>().LoseHealth(1);
+                            enemies[i].GetComponent<LockOnV1>().locked = false;
+                        }
+                        else if (enemies[i].tag == "Ring")
+                        {
+                            enemies[i].GetComponent<BeeSpawner>().OnBeeDestroy();
+                            Destroy(enemies[i]);
+                        }
+                        else if (enemies[i].tag == "Bee")
+                        {
+                            if (IsBeeScene)
+                            {
+                                // Increase condition count
+                                ControllerRef.AddToConditionCount();
+                                enemies[i].GetComponent<LockOnV1>().locked = false;
+                                enemies[i].SetActive(false);
+                            }
+                            else
+                            {
+                                enemies[i].GetComponent<LockOnV1>().locked = false;
+                                enemies[i].SetActive(false);
+                            }
+                        }
+                        else
+                        {
+                            Destroy(enemies[i]);
+                        }
+
+                        Destroy(alltargetimages[i].gameObject);
+
+                        enemies[i] = null;
+                        alltargetimages[i] = null;
+
+                        currentlocknum = 0;
+
+                        yield return new WaitForSeconds(BeatDelay);
+                    }
+                }
+
+                // Reset is able to shoot
+                IsAbleToShoot = true;
+            }            
+        }    
     }
 }
