@@ -5,10 +5,17 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public Slider SliderRef;
+    public Color hpstartcolour;
+    public Color hpoof;
+    public Color hphurt;
+    public Color hpdying;
+
+    public GameObject segmentholder;
+
+    //public Slider SliderRef;
     LockOnV2 LockOnV2Ref; 
 
-    public int MaxHealth = 5;
+    public int MaxHealth = 8;
     int CurHealth;
 
     public int DamageValue = -1;
@@ -19,9 +26,9 @@ public class PlayerHealth : MonoBehaviour
         // Init health and UI
         CurHealth = MaxHealth;
 
-        SliderRef.minValue = 0f;
+        /*SliderRef.minValue = 0f;
         SliderRef.maxValue = MaxHealth;
-        SliderRef.value = MaxHealth;
+        SliderRef.value = MaxHealth;*/
 
         // Init ref
         LockOnV2Ref = Camera.main.gameObject.GetComponent<LockOnV2>();
@@ -47,10 +54,42 @@ public class PlayerHealth : MonoBehaviour
 
     void ChangeHealth(int valueToChangeBy)
     {
+
         // Add value to change by to current health
         CurHealth += valueToChangeBy;
 
         // Update UI
-        SliderRef.value = CurHealth;
+        //SliderRef.value = CurHealth;
+
+        if (CurHealth >= 0)
+        {
+            segmentholder.transform.GetChild(CurHealth).gameObject.SetActive(false);
+
+            switch (CurHealth)
+            {
+                case 6:
+                    colourchange(hpoof);
+                    break;
+
+                case 4:
+                    colourchange(hphurt);
+                    break;
+
+                case 2:
+                    colourchange(hpdying);
+                    break;
+            }
+        }
+
     }
+
+    void colourchange(Color colourtarget)
+    {
+        Debug.Log("running");
+        for (int i = 0; i < segmentholder.transform.childCount; i++)
+        {
+            segmentholder.transform.GetChild(i).GetComponent<Image>().color = colourtarget;
+        }
+    }
+
 }
