@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -857,6 +857,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 166785836}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &177737654 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8820113262589298307, guid: a12bc1f3c358d954db0607e29e7952b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2023275259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &177737655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177737654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fc28d1b90f6fe04f9affa5cf2b9d211, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerSpeed: 0.1
+  MaxOffset: 5
+  CenterRef: {fileID: 728201561}
+  RailsToFollow: {fileID: 2110288647}
 --- !u!1001 &186878840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12909,6 +12931,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2023275261, guid: a12bc1f3c358d954db0607e29e7952b4, type: 3}
+      propertyPath: segmentholder
+      value: 
+      objectReference: {fileID: 1103811596}
     - target: {fileID: 4395412754212535849, guid: a12bc1f3c358d954db0607e29e7952b4,
         type: 3}
       propertyPath: CenterRef
@@ -12924,15 +12950,8 @@ PrefabInstance:
       propertyPath: PlayerSpeed
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2023275261, guid: a12bc1f3c358d954db0607e29e7952b4, type: 3}
-      propertyPath: segmentholder
-      value: 
-      objectReference: {fileID: 1103811596}
-    - target: {fileID: 2023275262, guid: a12bc1f3c358d954db0607e29e7952b4, type: 3}
-      propertyPath: CenterRef
-      value: 
-      objectReference: {fileID: 728201561}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2023275262, guid: a12bc1f3c358d954db0607e29e7952b4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a12bc1f3c358d954db0607e29e7952b4, type: 3}
 --- !u!4 &2023275265 stripped
 Transform:
