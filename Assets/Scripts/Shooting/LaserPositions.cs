@@ -19,7 +19,7 @@ public class LaserPositions : MonoBehaviour
         player = GameObject.Find("Player");
 
         line.SetPosition(0, player.transform.position);
-        line.SetPosition(1, enemy.transform.position);
+        line.SetPosition(1, enemy.transform.TransformPoint(enemy.GetComponent<BoxCollider>().center));
         line.startColor = Color.red;
         line.endColor = Color.red;
 

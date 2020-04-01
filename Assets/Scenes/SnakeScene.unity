@@ -875,8 +875,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fc28d1b90f6fe04f9affa5cf2b9d211, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerSpeed: 0.1
-  MaxOffset: 5
+  PlayerSpeed: 1
+  MaxOffset: 1.5
   CenterRef: {fileID: 728201561}
   RailsToFollow: {fileID: 2110288647}
 --- !u!1001 &186878840
@@ -5285,7 +5285,7 @@ MonoBehaviour:
   RailsToFollow: {fileID: 2110288647}
   CenterRef: {fileID: 728201561}
   RadiusOffset: 1
-  OffsetMagnitude: 1
+  OffsetMagnitude: 0.35
 --- !u!82 &963194230
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5396,7 +5396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targeticon: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5,
     type: 3}
-  maxlock: 3
+  maxlock: 4
   currentlocknum: 0
   cursorreplacement: {fileID: 1409679245}
   laserPrefab: {fileID: 3809442928978866920, guid: 66d40c8bc9313a74db1d77f9c93050d3,
@@ -6983,7 +6983,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 16
+  m_Radius: 18
   m_Height: 250
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: -25}
@@ -13759,7 +13759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RotateSpeed: 30
-  Radius: 10
+  Radius: 14
   CenterRef: {fileID: 728201561}
 --- !u!4 &2110288647
 Transform:

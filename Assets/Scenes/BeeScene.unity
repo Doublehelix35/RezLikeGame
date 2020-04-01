@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.3962128, g: 0.72526526, b: 0.6729909, a: 1}
+  m_IndirectSpecularColor: {r: 0.39621285, g: 0.72526544, b: 0.6729898, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -314,6 +314,7 @@ GameObject:
   - component: {fileID: 100221903}
   - component: {fileID: 100221905}
   - component: {fileID: 100221904}
+  - component: {fileID: 100221906}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -337,7 +338,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 167}
+  m_AnchoredPosition: {x: 0, y: 174}
   m_SizeDelta: {x: 365.3, y: 60.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &100221904
@@ -353,7 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -362,11 +363,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_FontSize: 42
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
-    m_MaxSize: 40
+    m_MaxSize: 42
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -382,6 +383,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100221902}
   m_CullTransparentMesh: 0
+--- !u!114 &100221906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100221902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &187078734 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 978327192631944031, guid: a7c3408575a3e1a46a35dc8aa96ffad3,
@@ -907,8 +923,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: 0.6000061}
-  m_SizeDelta: {x: 949.5, y: 513.1}
+  m_AnchoredPosition: {x: -0.000024796, y: -0.000005722}
+  m_SizeDelta: {x: 756.1, y: 462.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &954750329
 MonoBehaviour:
@@ -923,8 +939,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8018868, g: 0.7895481, b: 0.73758453, a: 0.85882354}
-  m_RaycastTarget: 1
+  m_Color: {r: 0.7084225, g: 0.6304735, b: 0.8301887, a: 0.85882354}
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -959,7 +975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e87d6c38f2617074a9e86c2c5e1ad254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DelayTime: 2
+  DelayTime: 4
   IsDestroyable: 0
 --- !u!1 &963194225
 GameObject:
@@ -1157,7 +1173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targeticon: {fileID: 8074086760862111498, guid: 02d3f2fcf97a2d348afda753aeee80b5,
     type: 3}
-  maxlock: 3
+  maxlock: 4
   currentlocknum: 0
   cursorreplacement: {fileID: 187078734}
   laserPrefab: {fileID: 3809442928978866920, guid: 66d40c8bc9313a74db1d77f9c93050d3,
@@ -1315,6 +1331,7 @@ GameObject:
   - component: {fileID: 1242603887}
   - component: {fileID: 1242603889}
   - component: {fileID: 1242603888}
+  - component: {fileID: 1242603890}
   m_Layer: 5
   m_Name: Info_txt
   m_TagString: Untagged
@@ -1338,8 +1355,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000012159, y: -13}
-  m_SizeDelta: {x: 384.6, y: 216}
+  m_AnchoredPosition: {x: 0, y: -30}
+  m_SizeDelta: {x: 596.1, y: 291.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1242603888
 MonoBehaviour:
@@ -1354,7 +1371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1363,7 +1380,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -1374,13 +1391,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '1) Shoot da bees
+  m_Text: 'Move: WASD or Arrow keys
 
 
-    2) Find da egg
+    Target: Mouse over enemies
 
 
-    3) Kill da snake'
+    Shoot: Left click to fire'
 --- !u!222 &1242603889
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1389,6 +1406,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242603886}
   m_CullTransparentMesh: 0
+--- !u!114 &1242603890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242603886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1330226004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,7 +1525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee1881e9a2f8151418204150f39eb97e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveDirectionSpeed: {x: 0, y: -0.2}
+  MoveDirectionSpeed: {x: 0, y: -0.8}
 --- !u!1 &1416281203
 GameObject:
   m_ObjectHideFlags: 0
