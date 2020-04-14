@@ -896,7 +896,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1, y: 6e-45, z: 0, w: -2.369493e+20}
+  m_BoundingSphereOverride: {x: 4.1931313e+21, y: 6.74291e+22, z: 1.7077761e+19, w: 1.8468969e+25}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -3202,6 +3202,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SoundManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6316645566559835989, guid: be902971724a09f4da2b9d40e1917a73,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6316645566559835987, guid: be902971724a09f4da2b9d40e1917a73,
         type: 3}
