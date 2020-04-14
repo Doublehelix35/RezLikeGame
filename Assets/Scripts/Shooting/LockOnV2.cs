@@ -18,6 +18,9 @@ public class LockOnV2 : MonoBehaviour
 
     public GameObject laserPrefab;
 
+    public GameObject ShootingParticles;
+    public GameObject DeathParticles;
+
     // For condition scene transitions
     SceneController ControllerRef;
     public bool IsBeeScene = false;
@@ -136,36 +139,49 @@ public class LockOnV2 : MonoBehaviour
                 {
                     if (enemies[i] != null)
                     {
+                        // Spawn laser
                         GameObject laserSpawn = Instantiate(laserPrefab);
-                        laserSpawn.GetComponent<LaserPositions>().enemy = enemies[i];
+                        laserSpawn.GetComponent<LaserPositions>().enemy = enemies[i];                        
 
                         if (enemies[i].tag == "Snake")
                         {
+                            // Spawn shot particle
+                            GameObject shotParticle = Instantiate(ShootingParticles, enemies[i].transform.position, Quaternion.identity);
+                            Destroy(shotParticle, 2);
+
                             GameObject.Find("SnakeHead").GetComponent<SnakeManager>().LoseHealth(1);
                             enemies[i].GetComponent<LockOnV1>().locked = false;
                         }
                         else if (enemies[i].tag == "Ring")
                         {
+                            // Spawn death particle
+                            GameObject deathParticle = Instantiate(DeathParticles, enemies[i].transform.TransformPoint(enemies[i].GetComponent<BoxCollider>().center), Quaternion.identity);
+                            Destroy(deathParticle, 2);
+
                             enemies[i].GetComponent<BeeSpawner>().OnBeeDestroy();
                             Destroy(enemies[i]);
                         }
                         else if (enemies[i].tag == "Bee")
                         {
+                            // Spawn death particle
+                            GameObject deathParticle = Instantiate(DeathParticles, enemies[i].transform.position, Quaternion.identity);
+                            Destroy(deathParticle, 2);
+
                             if (IsBeeScene)
                             {
                                 // Increase condition count
                                 ControllerRef.AddToConditionCount();
-                                enemies[i].GetComponent<LockOnV1>().locked = false;
-                                enemies[i].SetActive(false);
                             }
-                            else
-                            {
-                                enemies[i].GetComponent<LockOnV1>().locked = false;
-                                enemies[i].SetActive(false);
-                            }
+
+                            enemies[i].GetComponent<LockOnV1>().locked = false;
+                            enemies[i].SetActive(false);
                         }
                         else
                         {
+                            // Spawn death particle
+                            GameObject deathParticle = Instantiate(DeathParticles, enemies[i].transform.position, Quaternion.identity);
+                            Destroy(deathParticle, 2);
+
                             Destroy(enemies[i]);
                         }
 

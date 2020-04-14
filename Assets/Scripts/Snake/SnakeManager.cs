@@ -14,6 +14,8 @@ public class SnakeManager : MonoBehaviour
 
     SceneController ControllerRef;
 
+    public GameObject DeathParticles;
+
 
     void Start()
     {
@@ -107,7 +109,9 @@ public class SnakeManager : MonoBehaviour
     {
         Debug.Log("Destroy this piece: " + pieceToDestroy.name);
 
-        // Spawn particle effects
+        // Spawn death particle
+        GameObject deathParticle = Instantiate(DeathParticles, pieceToDestroy.transform.position, Quaternion.identity);
+        Destroy(deathParticle, 2);
 
         // Remove from pieces list
         SnakePieces.Remove(pieceToDestroy);

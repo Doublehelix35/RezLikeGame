@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.09697976, g: 0.12143842, b: 0.16299325, a: 1}
+  m_IndirectSpecularColor: {r: 0.09697949, g: 0.1214379, b: 0.16299286, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5678,6 +5678,10 @@ MonoBehaviour:
   currentlocknum: 0
   cursorreplacement: {fileID: 1409679245}
   laserPrefab: {fileID: 3809442928978866920, guid: 66d40c8bc9313a74db1d77f9c93050d3,
+    type: 3}
+  ShootingParticles: {fileID: 2556096786087460233, guid: 776195b751352714eb6f13ff3fcb2f9f,
+    type: 3}
+  DeathParticles: {fileID: 734549154042152966, guid: 334e587cd04e9544d980dbf4da3c2ffe,
     type: 3}
   IsBeeScene: 0
   BeatDelay: 0.5
@@ -14451,6 +14455,12 @@ PrefabInstance:
       propertyPath: SnakePieces.Array.data[7]
       value: 
       objectReference: {fileID: 1380848751}
+    - target: {fileID: 7872279234099059316, guid: db36ace2234e4b743bfa4e794500843c,
+        type: 3}
+      propertyPath: DeathParticles
+      value: 
+      objectReference: {fileID: 734549154042152966, guid: 334e587cd04e9544d980dbf4da3c2ffe,
+        type: 3}
     - target: {fileID: 2726758053671932753, guid: db36ace2234e4b743bfa4e794500843c,
         type: 3}
       propertyPath: m_LocalScale.x
