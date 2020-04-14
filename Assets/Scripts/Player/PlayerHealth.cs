@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -80,7 +81,10 @@ public class PlayerHealth : MonoBehaviour
                     break;
             }
         }
-
+        else if (CurHealth <= 0)
+        {
+            die();
+        }
     }
 
     void colourchange(Color colourtarget)
@@ -90,6 +94,17 @@ public class PlayerHealth : MonoBehaviour
         {
             segmentholder.transform.GetChild(i).GetComponent<Image>().color = colourtarget;
         }
+    }
+
+    void die()
+    {
+        StartCoroutine(PlayerDie());
+    }
+
+    IEnumerator PlayerDie()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene("GameOver");
     }
 
 }
