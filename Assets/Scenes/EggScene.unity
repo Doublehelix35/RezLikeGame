@@ -276,6 +276,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ring_90
       objectReference: {fileID: 0}
+    - target: {fileID: 9105683143388852887, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5190041554632474756, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -363,7 +368,7 @@ PrefabInstance:
     - target: {fileID: 9105683143388852887, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5190041554632474756, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
         type: 3}
@@ -593,7 +598,7 @@ PrefabInstance:
     - target: {fileID: 9105683143388852887, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5190041554632474756, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
         type: 3}
@@ -982,6 +987,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring_146.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105683143388852887, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5190041554632474756, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
         type: 3}
@@ -1513,6 +1523,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring_11.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105683143388852887, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5190041554632474756, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
         type: 3}
@@ -2357,6 +2372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring_56.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105683143388852887, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5190041554632474756, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
         type: 3}
@@ -4683,7 +4703,7 @@ PrefabInstance:
     - target: {fileID: 4093671218664904579, guid: 5c34ba22d7162e84d909fd0993509523,
         type: 3}
       propertyPath: ConditionMin
-      value: 256
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 4093671218664904579, guid: 5c34ba22d7162e84d909fd0993509523,
         type: 3}
@@ -5049,6 +5069,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring_101.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105683143388852887, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5190041554632474756, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
         type: 3}
@@ -6101,6 +6126,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105683143388852887, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5190041554632474756, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
         type: 3}

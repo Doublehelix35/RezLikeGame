@@ -87,6 +87,7 @@ public class LockOnV2 : MonoBehaviour
             if (enemies[i] == null)
             {
                 enemies[i] = enemy;
+                enemy.GetComponent<LockOnV1>().locked = true;
 
                 Vector3 mypos = enemy.transform.TransformPoint(enemy.GetComponent<BoxCollider>().center);
                 mypos = Camera.main.WorldToScreenPoint(mypos);

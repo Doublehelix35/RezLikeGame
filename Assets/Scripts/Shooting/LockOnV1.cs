@@ -48,8 +48,6 @@ public class LockOnV1 : MonoBehaviour
             mytarget.transform.SetParent(GameObject.Find("Canvas").transform);*/
 
             mainscript.addlock(gameObject);
-
-            locked = true;
         }
     }
 
