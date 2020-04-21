@@ -164,6 +164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8261166193445630962}
   - component: {fileID: 1847123525231633471}
+  - component: {fileID: 5069414089074775824}
   m_Layer: 0
   m_Name: MovingBananaSelf
   m_TagString: Untagged
@@ -207,8 +208,20 @@ MonoBehaviour:
   DirectionY: 0
   DirectionZ: 0
   Speed: 0.1
-  DestroyAfterTimeDelay: 1
-  TimeDelayForDestruction: 5
+--- !u!114 &5069414089074775824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971647686149931489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e87d6c38f2617074a9e86c2c5e1ad254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DelayTime: 2
+  IsDestroyable: 0
 --- !u!1 &5301296202950535429
 GameObject:
   m_ObjectHideFlags: 0

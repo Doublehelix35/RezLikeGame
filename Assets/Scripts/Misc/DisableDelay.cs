@@ -7,26 +7,38 @@ public class DisableDelay : MonoBehaviour
     public float DelayTime = 1f;
     public bool IsDestroyable = false;
 
-    IEnumerator coroutine;
+    internal bool IsDisabled = false;
 
-    void Start()
+    float curTime = 0f;
+
+    void Update()
     {
-        // Start coroutine
-        coroutine = Disable();
-        StartCoroutine(coroutine);
-    }
-
-    IEnumerator Disable()
-    {
-        yield return new WaitForSeconds(DelayTime);
-
-        if (IsDestroyable)
+        if (!IsDisabled)
         {
-            Destroy(gameObject);
+            curTime += Time.deltaTime;
+
+            if (curTime > DelayTime)
+            {
+                if (IsDestroyable)
+                {
+                    Destroy(gameObject);
+                }
+                else
+                {
+                    gameObject.SetActive(false);
+                    IsDisabled = true;
+                }
+
+                // Reset current time
+                curTime = 0;
+            }
         }
-        else
+
+        // Check if reactivated
+        if (IsDisabled && gameObject.activeInHierarchy)
         {
-            gameObject.SetActive(false);
-        }        
+            IsDisabled = false;
+        }
+        
     }
 }

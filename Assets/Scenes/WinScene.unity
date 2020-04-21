@@ -1576,9 +1576,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 4971647686149931489, guid: 29975a6173c58f245a8b2725c08be4cb,
     type: 3}
-  MaxPoolSize: 5
+  MaxPoolSize: 20
   SpawnRadius: 1
-  SpawnFrequency: 0.1
+  SpawnFrequency: 0.15
   SpawnChance: 0.9
   UseScaleModifier: 1
   UseSpawnerRotation: 1
@@ -2733,9 +2733,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 4971647686149931489, guid: 29975a6173c58f245a8b2725c08be4cb,
     type: 3}
-  MaxPoolSize: 5
+  MaxPoolSize: 20
   SpawnRadius: 1
-  SpawnFrequency: 0.1
+  SpawnFrequency: 0.15
   SpawnChance: 0.9
   UseScaleModifier: 1
   UseSpawnerRotation: 1
@@ -5848,7 +5848,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 9168371981630789736, guid: 1be966373acc3c345bc985aaf0194c28,
     type: 3}
-  MaxPoolSize: 5
+  MaxPoolSize: 15
   SpawnRadius: 1
   SpawnFrequency: 0.5
   SpawnChance: 0.784
@@ -5898,7 +5898,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &232252275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5913,7 +5913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 4971647686149931489, guid: 29975a6173c58f245a8b2725c08be4cb,
     type: 3}
-  MaxPoolSize: 5
+  MaxPoolSize: 15
   SpawnRadius: 1
   SpawnFrequency: 0.5
   SpawnChance: 0.85
@@ -10164,7 +10164,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &420112228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10179,7 +10179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 4971647686149931489, guid: 29975a6173c58f245a8b2725c08be4cb,
     type: 3}
-  MaxPoolSize: 5
+  MaxPoolSize: 15
   SpawnRadius: 1
   SpawnFrequency: 0.5
   SpawnChance: 0.85
@@ -15260,7 +15260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &658555283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15275,7 +15275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 4971647686149931489, guid: 29975a6173c58f245a8b2725c08be4cb,
     type: 3}
-  MaxPoolSize: 5
+  MaxPoolSize: 15
   SpawnRadius: 1
   SpawnFrequency: 0.5
   SpawnChance: 0.85
@@ -27297,7 +27297,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1269875257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27312,7 +27312,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 4971647686149931489, guid: 29975a6173c58f245a8b2725c08be4cb,
     type: 3}
-  MaxPoolSize: 5
+  MaxPoolSize: 15
   SpawnRadius: 1
   SpawnFrequency: 0.5
   SpawnChance: 0.85
@@ -35151,7 +35151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabToSpawn: {fileID: 9168371981630789736, guid: 1be966373acc3c345bc985aaf0194c28,
     type: 3}
-  MaxPoolSize: 5
+  MaxPoolSize: 15
   SpawnRadius: 1
   SpawnFrequency: 0.5
   SpawnChance: 0.784
@@ -49153,11 +49153,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2588c16bf60e08e45911fbd377c8ec7a, type: 2}
-    - target: {fileID: 1969333043186725149, guid: 46114cfd5b6875e44b9c613359fd554f,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2588c16bf60e08e45911fbd377c8ec7a, type: 2}
     - target: {fileID: 4264638271573805412, guid: 46114cfd5b6875e44b9c613359fd554f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -49194,6 +49189,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 2588c16bf60e08e45911fbd377c8ec7a, type: 2}
     - target: {fileID: 9158163149296280545, guid: 46114cfd5b6875e44b9c613359fd554f,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2588c16bf60e08e45911fbd377c8ec7a, type: 2}
+    - target: {fileID: 1969333043186725149, guid: 46114cfd5b6875e44b9c613359fd554f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
