@@ -9,6 +9,11 @@ public class SoundManager : MonoBehaviour
     public AudioSource efxSource; //Audio Source that will Play SFX
     public AudioSource musicSource; //Audio Source that will Play Music
 
+    //Menu
+    public AudioClip MbuttHover;
+    public AudioClip MbuttSelect;
+
+    //Lock On & Fire
     public AudioClip LockOn;
     public AudioClip Fire;
 
@@ -106,6 +111,20 @@ public class SoundManager : MonoBehaviour
 
         efxSource.Play();
 
+    }
+
+    public void MenuButtonHover(AudioClip clip)
+    {
+        efxSource.clip = MbuttHover;
+
+        efxSource.Play();
+    }
+
+    public void MenuButtonSelect(AudioClip clip)
+    {
+        efxSource.clip = MbuttSelect;
+
+        efxSource.Play();
     }
 
     public void PlayBeeDie(AudioClip clip)

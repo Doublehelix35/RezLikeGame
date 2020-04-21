@@ -9,6 +9,7 @@ TagManager:
   - Snake
   - Scenery
   - TempTarget
+  - SoundMan
   layers:
   - Default
   - TransparentFX
