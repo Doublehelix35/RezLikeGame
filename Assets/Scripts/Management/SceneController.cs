@@ -12,6 +12,8 @@ public class SceneController : MonoBehaviour
     public int ConditionMin = 1;
     int CurConditionCount = 0;
 
+    public Animator transition;
+
     //public bool UseTimer = false;
     //public float TimerDelay = 0f;
 
@@ -48,7 +50,9 @@ public class SceneController : MonoBehaviour
         if(CurConditionCount >= ConditionMin)
         {
             // Go to next scene
-            LoadLevel();
+            //LoadLevel();
+
+            transition.SetBool("Exiting", true);
         }
     }
 }
