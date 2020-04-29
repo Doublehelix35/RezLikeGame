@@ -1859,6 +1859,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ring_112.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9105683143388852887, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5190041554632474756, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4846,7 +4851,7 @@ PrefabInstance:
     - target: {fileID: 4093671218664904579, guid: 5c34ba22d7162e84d909fd0993509523,
         type: 3}
       propertyPath: ConditionMin
-      value: 160
+      value: 128
       objectReference: {fileID: 0}
     - target: {fileID: 4093671218664904579, guid: 5c34ba22d7162e84d909fd0993509523,
         type: 3}
@@ -5312,6 +5317,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ring_22.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9105683143388852887, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5190041554632474756, guid: 9b858386a1ba79d4b9c4d3c9d2613558,
         type: 3}

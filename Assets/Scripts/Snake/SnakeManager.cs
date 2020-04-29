@@ -58,12 +58,10 @@ public class SnakeManager : MonoBehaviour
                 for (int i = SnakePieces.Count; i > 0; i--)
                 {
                     // If health less than i * health per piece then remove a piece
-                    if (Health < (i * HealthPerPiece) - 3)
+                    if (Health < (i * HealthPerPiece) - HealthPerPiece)
                     {
                         if (SnakePieces.Count == 2)
                         {
-                            Debug.Log("Snake 2 pieces left");
-
                             // Flash piece red
 
                             // Destroy last piece
@@ -71,8 +69,6 @@ public class SnakeManager : MonoBehaviour
                         }
                         else
                         {
-                            Debug.Log("Snake lost a piece");
-
                             // Flash piece red
 
                             // Set last piece's object to follow to piece before removed piece
@@ -84,9 +80,8 @@ public class SnakeManager : MonoBehaviour
 
                             // Fix spring (connect piece 3rd from end to end piece)
                             Destroy(SnakePieces[SnakePieces.Count - 3].GetComponent<SpringJoint>()); // Remove spring
-                            SnakePieces[SnakePieces.Count - 3].AddComponent<SpringJoint>(); // Add new spring
-
-                            SnakePieces[SnakePieces.Count - 3].GetComponent<SpringJoint>().connectedBody = SnakePieces[SnakePieces.Count - 1].GetComponent<Rigidbody>();
+                            SnakePieces[SnakePieces.Count - 3].AddComponent<SpringJoint>().connectedBody 
+                                                               = SnakePieces[SnakePieces.Count - 1].GetComponent<Rigidbody>(); // Add new spring
 
                             // Destroy 2nd to last piece
                             DestroyPiece(SnakePieces[SnakePieces.Count - 2]);
@@ -107,8 +102,6 @@ public class SnakeManager : MonoBehaviour
 
     void DestroyPiece(GameObject pieceToDestroy)
     {
-        Debug.Log("Destroy this piece: " + pieceToDestroy.name);
-
         // Spawn death particle
         GameObject deathParticle = Instantiate(DeathParticles, pieceToDestroy.transform.position, Quaternion.identity);
         Destroy(deathParticle, 2);
