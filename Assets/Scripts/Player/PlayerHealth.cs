@@ -13,7 +13,6 @@ public class PlayerHealth : MonoBehaviour
 
     public GameObject segmentholder;
 
-    //public Slider SliderRef;
     LockOnV2 LockOnV2Ref; 
 
     public int MaxHealth = 8;
@@ -26,10 +25,6 @@ public class PlayerHealth : MonoBehaviour
     {
         // Init health and UI
         CurHealth = MaxHealth;
-
-        /*SliderRef.minValue = 0f;
-        SliderRef.maxValue = MaxHealth;
-        SliderRef.value = MaxHealth;*/
 
         // Init ref
         LockOnV2Ref = Camera.main.gameObject.GetComponent<LockOnV2>();
@@ -81,7 +76,8 @@ public class PlayerHealth : MonoBehaviour
                     break;
             }
         }
-        else if (CurHealth <= 0)
+
+        if (CurHealth <= 0)
         {
             die();
         }
@@ -103,7 +99,7 @@ public class PlayerHealth : MonoBehaviour
 
     IEnumerator PlayerDie()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.2f);
         SceneManager.LoadScene("GameOver");
     }
 
