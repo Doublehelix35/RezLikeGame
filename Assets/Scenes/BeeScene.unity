@@ -1446,6 +1446,7 @@ MonoBehaviour:
   cursorreplacement: {fileID: 187078734}
   laserPrefab: {fileID: 3809442928978866920, guid: 66d40c8bc9313a74db1d77f9c93050d3,
     type: 3}
+  FirePoint: {fileID: 1624285023}
   ShootingParticles: {fileID: 2556096786087460233, guid: 776195b751352714eb6f13ff3fcb2f9f,
     type: 3}
   DeathParticles: {fileID: 734549154042152966, guid: 334e587cd04e9544d980dbf4da3c2ffe,
@@ -2592,6 +2593,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1423734893143375661, guid: 8f0eed1d6abeab44db34d9dcd6809ca1,
     type: 3}
   m_PrefabInstance: {fileID: 1423734893665634788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1624285023 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7225910362301691946, guid: a12bc1f3c358d954db0607e29e7952b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2023275259}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1635062610 stripped
 Transform:

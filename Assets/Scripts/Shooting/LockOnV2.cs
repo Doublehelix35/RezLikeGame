@@ -17,6 +17,7 @@ public class LockOnV2 : MonoBehaviour
     public GameObject cursorreplacement;
 
     public GameObject laserPrefab;
+    public GameObject FirePoint;
 
     public GameObject ShootingParticles;
     public GameObject DeathParticles;
@@ -142,6 +143,7 @@ public class LockOnV2 : MonoBehaviour
                     {
                         // Spawn laser
                         GameObject laserSpawn = Instantiate(laserPrefab);
+                        laserSpawn.GetComponent<LaserPositions>().player = FirePoint;
                         laserSpawn.GetComponent<LaserPositions>().enemy = enemies[i];                        
 
                         if (enemies[i].tag == "Snake")

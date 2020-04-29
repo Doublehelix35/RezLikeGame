@@ -6,8 +6,8 @@ public class LaserPositions : MonoBehaviour
 {
 
     LineRenderer line;
-    public GameObject player;
-    public GameObject enemy;
+    internal GameObject player;
+    internal GameObject enemy;
 
     float lifetime;
 
@@ -15,8 +15,6 @@ public class LaserPositions : MonoBehaviour
     void Start()
     {
         line = gameObject.GetComponent<LineRenderer>();
-
-        player = GameObject.Find("Player");
 
         line.SetPosition(0, player.transform.position);
         line.SetPosition(1, enemy.transform.TransformPoint(enemy.GetComponent<BoxCollider>().center));

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3962128, g: 0.72526526, b: 0.6729909, a: 1}
+  m_IndirectSpecularColor: {r: 0.39621285, g: 0.72526544, b: 0.6729898, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2491,6 +2491,7 @@ MonoBehaviour:
   cursorreplacement: {fileID: 597071378}
   laserPrefab: {fileID: 3809442928978866920, guid: 66d40c8bc9313a74db1d77f9c93050d3,
     type: 3}
+  FirePoint: {fileID: 2023275260}
   ShootingParticles: {fileID: 2556096786087460233, guid: 776195b751352714eb6f13ff3fcb2f9f,
     type: 3}
   DeathParticles: {fileID: 734549154042152966, guid: 334e587cd04e9544d980dbf4da3c2ffe,
@@ -5806,6 +5807,12 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2023275262, guid: a12bc1f3c358d954db0607e29e7952b4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a12bc1f3c358d954db0607e29e7952b4, type: 3}
+--- !u!1 &2023275260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7225910362301691946, guid: a12bc1f3c358d954db0607e29e7952b4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2023275259}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2053941485
 GameObject:
   m_ObjectHideFlags: 0
