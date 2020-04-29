@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6117628229525076276}
   - component: {fileID: 5901552339201005042}
   - component: {fileID: 8523142741452522021}
+  - component: {fileID: 5821253503718413326}
   m_Layer: 9
   m_Name: Bee_Egg
   m_TagString: Bee
@@ -91,6 +92,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4, y: 1, z: 1}
   m_Center: {x: 0.2, y: 0, z: 0}
+--- !u!95 &5821253503718413326
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154538217430285840}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 633b04ea925c5aa41ba51dc34763966a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!135 &111417735456251606
 SphereCollider:
   m_ObjectHideFlags: 0
