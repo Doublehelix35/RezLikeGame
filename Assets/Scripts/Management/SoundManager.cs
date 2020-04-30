@@ -30,11 +30,16 @@ public class SoundManager : MonoBehaviour
     public GameObject Gameman;
     public int Scenenum;
 
+    //Clip For transition
+    public AudioClip Tran;
+
     //music for scenes
     public AudioClip scene1Music; //BeeScene
     public AudioClip scene2Music; //EggScene
     public AudioClip scene3Music; //SnakeScene
     public AudioClip scene4Music; //WinScene
+
+
 
     bool scene2play = false;
     bool scene3play = false;
@@ -109,6 +114,13 @@ public class SoundManager : MonoBehaviour
 
         efxSource.Play();
 
+    }
+
+    public void TransitionSound(AudioClip clip)
+    {
+        efxSource.clip = Tran;
+
+        efxSource.Play();
     }
 
     public void MenuButtonHover(AudioClip clip)

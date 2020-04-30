@@ -56,7 +56,7 @@ MonoBehaviour:
   BossDie: {fileID: 0}
   Gameman: {fileID: 0}
   Scenenum: 0
-  Cam: {fileID: 0}
+  Tran: {fileID: 8300000, guid: 167f37f239e91a54c8ccbf6aa162c986, type: 3}
   scene1Music: {fileID: 8300000, guid: 1ed3314388e51a443ba74a163765ac4d, type: 3}
   scene2Music: {fileID: 8300000, guid: 0f873f5c19cb91a468c1aad9aef43513, type: 3}
   scene3Music: {fileID: 8300000, guid: b06632591cca52141a35b9b97686487d, type: 3}
