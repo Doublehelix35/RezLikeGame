@@ -15,6 +15,11 @@ public class SceneChange : MonoBehaviour
         StartCoroutine(SecenLoading());
     }
 
+    public void Replay()
+    {
+        SceneManager.LoadScene("BeeScene");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
