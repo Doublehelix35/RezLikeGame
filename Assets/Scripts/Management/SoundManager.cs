@@ -92,7 +92,7 @@ public class SoundManager : MonoBehaviour
 
     }
 
-    public void PlayLockOn(AudioClip clip)
+    public void PlayLockOn()
     {
         efxSource.clip = LockOn;    //sets Audioclip to desired clip and plays.
 
@@ -100,7 +100,7 @@ public class SoundManager : MonoBehaviour
 
     }
 
-    public void PlayFire(AudioClip clip)
+    public void PlayFire()
     {
         efxSource.clip = Fire;
 
@@ -108,7 +108,7 @@ public class SoundManager : MonoBehaviour
 
     }
 
-    public void PlayBee(AudioClip clip)
+    public void PlayBee()
     {
         efxSource.clip = Bee;
 
@@ -116,49 +116,49 @@ public class SoundManager : MonoBehaviour
 
     }
 
-    public void TransitionSound(AudioClip clip)
+    public void TransitionSound()
     {
         efxSource.clip = Tran;
 
         efxSource.Play();
     }
 
-    public void MenuButtonHover(AudioClip clip)
+    public void MenuButtonHover()
     {
         efxSource.clip = MbuttHover;
 
         efxSource.Play();
     }
 
-    public void MenuButtonSelect(AudioClip clip)
+    public void MenuButtonSelect()
     {
         efxSource.clip = MbuttSelect;
 
         efxSource.Play();
     }
 
-    public void PlayBeeDie(AudioClip clip)
+    public void PlayBeeDie()
     {
         efxSource.clip = BeeDie;
 
         efxSource.Play();
     }
 
-    public void PlaySquareDie(AudioClip clip)
+    public void PlaySquareDie()
     {
         efxSource.clip = SquareDie;
 
         efxSource.Play();
     }
 
-    public void PlayBossEnrage(AudioClip clip)
+    public void PlayBossEnrage()
     {
         efxSource.clip = BossEnrage;
 
         efxSource.Play();
     }
 
-    public void PlayBossDie(AudioClip clip)
+    public void PlayBossDie()
     {
         efxSource.clip = BossDie;
 

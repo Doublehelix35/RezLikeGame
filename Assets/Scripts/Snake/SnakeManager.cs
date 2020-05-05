@@ -13,14 +13,16 @@ public class SnakeManager : MonoBehaviour
     bool IsInvunerable = false;
 
     SceneController ControllerRef;
+    SoundManager SoundManagerRef;
 
     public GameObject DeathParticles;
 
 
     void Start()
     {
-        // Init controller ref
+        // Init refs
         ControllerRef = GameObject.FindGameObjectWithTag("GameController").GetComponent<SceneController>();
+        SoundManagerRef = GameObject.FindGameObjectWithTag("SoundMan").GetComponent<SoundManager>();
 
         // Calc health
         Health = HealthPerPiece * SnakePieces.Count;
@@ -48,6 +50,9 @@ public class SnakeManager : MonoBehaviour
             if (Health <= 0)
             {
                 Debug.Log("Snake Dead");
+
+                // Play boss die
+                SoundManagerRef.PlayBossDie();
 
                 // Snake dead
                 DestroyPiece(gameObject);
@@ -105,6 +110,9 @@ public class SnakeManager : MonoBehaviour
         // Spawn death particle
         GameObject deathParticle = Instantiate(DeathParticles, pieceToDestroy.transform.position, Quaternion.identity);
         Destroy(deathParticle, 2);
+
+        // Play enrage sound
+        SoundManagerRef.PlayBossEnrage();
 
         // Remove from pieces list
         SnakePieces.Remove(pieceToDestroy);

@@ -32,11 +32,14 @@ public class LockOnV2 : MonoBehaviour
     bool IsAbleToShoot = true;
     public float BeatDelay = 0.5f;
 
+    internal SoundManager SoundManagerRef;
+
     void Start()
     {
         // Init refs
         ControllerRef = GameObject.FindGameObjectWithTag("GameController").GetComponent<SceneController>();
         CanvasRef = GameObject.Find("Canvas").transform;
+        SoundManagerRef = GameObject.FindGameObjectWithTag("SoundMan").GetComponent<SoundManager>();
 
         enemies = new GameObject[maxlock];
         alltargetimages = new Image[maxlock];
@@ -144,7 +147,10 @@ public class LockOnV2 : MonoBehaviour
                         // Spawn laser
                         GameObject laserSpawn = Instantiate(laserPrefab);
                         laserSpawn.GetComponent<LaserPositions>().player = FirePoint;
-                        laserSpawn.GetComponent<LaserPositions>().enemy = enemies[i];                        
+                        laserSpawn.GetComponent<LaserPositions>().enemy = enemies[i];
+
+                        // Play laser sound
+                        SoundManagerRef.PlayFire();              
 
                         if (enemies[i].tag == "Snake")
                         {
@@ -161,6 +167,12 @@ public class LockOnV2 : MonoBehaviour
                             GameObject deathParticle = Instantiate(DeathParticles, enemies[i].transform.TransformPoint(enemies[i].GetComponent<BoxCollider>().center), Quaternion.identity);
                             Destroy(deathParticle, 2);
 
+                            // Play square die
+                            SoundManagerRef.PlaySquareDie();
+
+                            // Play bee spawn sound
+                            SoundManagerRef.PlayBee();
+
                             enemies[i].GetComponent<BeeSpawner>().OnBeeDestroy();
                             Destroy(enemies[i]);
                         }
@@ -169,6 +181,9 @@ public class LockOnV2 : MonoBehaviour
                             // Spawn death particle
                             GameObject deathParticle = Instantiate(DeathParticles, enemies[i].transform.position, Quaternion.identity);
                             Destroy(deathParticle, 2);
+
+                            // Play bee death
+                            SoundManagerRef.PlayBeeDie();
 
                             if (IsBeeScene)
                             {
