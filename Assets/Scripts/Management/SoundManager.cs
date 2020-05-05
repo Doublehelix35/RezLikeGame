@@ -96,7 +96,7 @@ public class SoundManager : MonoBehaviour
     {
         efxSource.clip = LockOn;    //sets Audioclip to desired clip and plays.
 
-        efxSource.Play();
+        efxSource.PlayOneShot(LockOn);
 
     }
 
