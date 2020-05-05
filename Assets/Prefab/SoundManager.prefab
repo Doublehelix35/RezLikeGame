@@ -48,11 +48,11 @@ MonoBehaviour:
   MbuttHover: {fileID: 0}
   MbuttSelect: {fileID: 0}
   LockOn: {fileID: 8300000, guid: 63e48dffa3d082744aa5080f88eac370, type: 3}
-  Fire: {fileID: 8300000, guid: 15e2f792179f3484698a249fa2b03cf6, type: 3}
+  Fire: {fileID: 8300000, guid: cbc310828686432409a8b4f014b79342, type: 3}
   Bee: {fileID: 8300000, guid: 41b282f627e1a9c4b834047e9375544b, type: 3}
-  BeeDie: {fileID: 8300000, guid: 8a3e3e12893678d41857e2b1ef35c394, type: 3}
+  BeeDie: {fileID: 8300000, guid: c96398579a16e174ea0b09a735d119eb, type: 3}
   SquareDie: {fileID: 8300000, guid: 52fb271d4105793489f7dc9e90f438a3, type: 3}
-  BossEnrage: {fileID: 0}
+  BossEnrage: {fileID: 8300000, guid: cbc310828686432409a8b4f014b79342, type: 3}
   BossDie: {fileID: 0}
   Gameman: {fileID: 0}
   Scenenum: 0
