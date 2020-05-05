@@ -93,6 +93,9 @@ public class LockOnV2 : MonoBehaviour
                 enemies[i] = enemy;
                 enemy.GetComponent<LockOnV1>().locked = true;
 
+                // Play locked sound
+                SoundManagerRef.PlayLockOn();
+
                 Vector3 mypos = enemy.transform.TransformPoint(enemy.GetComponent<BoxCollider>().center);
                 mypos = Camera.main.WorldToScreenPoint(mypos);
                 
@@ -166,9 +169,6 @@ public class LockOnV2 : MonoBehaviour
                             // Spawn death particle
                             GameObject deathParticle = Instantiate(DeathParticles, enemies[i].transform.TransformPoint(enemies[i].GetComponent<BoxCollider>().center), Quaternion.identity);
                             Destroy(deathParticle, 2);
-
-                            // Play square die
-                            SoundManagerRef.PlaySquareDie();
 
                             // Play bee spawn sound
                             SoundManagerRef.PlayBee();
