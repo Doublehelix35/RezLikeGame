@@ -51,6 +51,7 @@ public class SceneController : MonoBehaviour
         {
             // Go to next scene
             //LoadLevel();
+            Cursor.visible = true;
 
             transition.SetBool("Exiting", true);
         }
